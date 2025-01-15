@@ -1,0 +1,21 @@
+.maze {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.maze-text {
+    padding-top: 150px;
+    padding-left: 115px;
+}
+
+.maze-title {
+    font-size: 81px;
+    margin-bottom: 70px;
+}
+
+.maze-p {
+    font-size: 20px;
+}

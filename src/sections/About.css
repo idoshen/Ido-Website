@@ -1,0 +1,28 @@
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.about-right {
+    padding: 99px;
+}
+
+.about-right h1{
+    font-size: 81px;
+    margin-bottom: 70px;
+}
+
+.about-text {
+    font-size: 20px;
+}
+
+.red-text {
+    color: #e80000;
+}
+
+.bold-text {
+    font-weight: bold;
+}
