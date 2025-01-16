@@ -1,6 +1,10 @@
 .home {
-  border: #e80000 2px solid;
   padding: 80px 20px 20px 20px;
+  opacity: 0;
+}
+
+.home.is-visible {
+  animation: fade-in 1s forwards;
 }
 
 .home-container {

@@ -4,7 +4,7 @@ import './Home.css';
 function Home() {
 
   return (
-    <section className="home fade-in">
+    <section className="home">
       <div className="home-container">
         <div className="home-name-and-buttons">
           <h1 className="home-name">Ido Shenbach</h1>

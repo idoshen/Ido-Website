@@ -3,7 +3,7 @@ import './SynthesizerApp.css';
 
 function SynthesizerApp(){
   return (
-    <section id="SynthesizerApp" className="section SynthesizerApp fade-in">
+    <section id="SynthesizerApp" className="section SynthesizerApp ">
         <h1>SynthesizerApp</h1>
     </section>
   );

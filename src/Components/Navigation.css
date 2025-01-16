@@ -30,7 +30,7 @@
   display: block;
   position: absolute;
   background-color: #22242A;
-  top: 140%;
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   padding: 10px;

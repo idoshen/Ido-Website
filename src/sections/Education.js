@@ -2,7 +2,7 @@ import React from 'react';
 
 function Education(){
   return (
-    <section id="education" className="section fade-in">
+    <section id="education" className="">
       <h2>My Education</h2>
       <div className="education-list">
         <div className="education-item">
