@@ -1,0 +1,113 @@
+.contact{
+    background-color: #22242a;
+    padding: 10%;
+}
+
+.contact-container{
+    opacity: 0;
+    color: #f8f8f2;
+}
+
+.contact-container.is-visible {
+    animation: fade-in 1s forwards;
+}
+
+.contact-container.is-hidden {
+    animation: fade-out 1s forwards;
+}
+
+.contact-title{
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.contact-p {
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0% 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 0% 10%;
+}
+
+.contact-rights {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+} 
+
+.animated-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'sofia-pro', sans-serif;
+    background-color: #e80000;
+    color: #f8f8f2;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 50px;
+    max-width: 250px;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.animated-button > img {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.animated-button > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+.animated-button:hover > img {
+    top: 50%;
+    opacity: 1;
+}
+
+.animated-button:hover > span {
+    top: -100%;
+    opacity: 0;
+}
+
+.animated-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Tablet Styles */
+@media (max-width: 768px) { 
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    
+}

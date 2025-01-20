@@ -1,0 +1,98 @@
+.skills {
+  background-color: #22242a;
+  color: #F3F3F3;
+  padding: 170px 10% 20px 200px;
+}
+
+.skills > div > div {
+  opacity: 0;
+}
+
+.skills h1 {
+  font-size: 80px;
+  opacity: 0;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 60vh);
+  gap: 50px;
+}
+
+.skills-container > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.icons-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  padding: 0% 10% 0% 0%;
+}
+
+.icons-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  padding: 0% 10% 0% 0%; 
+}
+
+.icon {
+  width: 117px;
+  height: 117px;
+}
+
+.big {
+  width: 200px;
+  height: 200px;
+}
+
+.skills-container > div > div > h2 {
+  font-size: 55px;
+}
+
+.skills-container > div > div > p {
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.icons-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-left{
+  padding-right: 10%;
+}
+
+.text-right{
+  padding-left: 10%;
+}
+
+.is-visible {
+  animation: fade-in 1s forwards;
+}
+
+.is-hidden {
+  animation: fade-out 1s forwards;
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+}
