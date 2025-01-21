@@ -24,7 +24,7 @@ function Skills(){
         <div id='prog-lang' className='prog-lang animate'>
           <div className='text text-left'>
             <h2>Programming Languages</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in aliquam massa, ac venenatis ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut pellentesque ligula, ut interdum lectus. Suspendisse potenti. </p>
+            <p>In my studies, I developed projects using Java, Python, C, and C#. I created a synthesizer in Java, worked on machine learning projects in Python (GitHub Repository), and completed two in-depth courses: one focusing on C programming and another on Object-Oriented Programming in C#.</p>
           </div>
             <div className='icons-4'>
               <div><img src={JavaIcon} alt='Java' className='icon'></img></div>
@@ -41,13 +41,13 @@ function Skills(){
           </div>
           <div className='text text-right'>
             <h2>Platforms & Frameworks</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in aliquam massa, ac venenatis ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut pellentesque ligula, ut interdum lectus. Suspendisse potenti. </p>
+            <p>I manage all my projects using Git, ensuring efficient version control and collaboration. I have experience working with .NET for application development and gained familiarity with Linux during my system programming in C course.</p>
           </div>
         </div>
         <div id='web' className='web animate'>
           <div className='text text-left'>
             <h2>Web Development & Tools</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in aliquam massa, ac venenatis ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut pellentesque ligula, ut interdum lectus. Suspendisse potenti. </p>
+            <p>I have gained hands-on experience in web development through projects like building this portfolio website and creating a Wordle Solver game. These projects allowed me to strengthen my skills in JavaScript, React, HTML5, and CSS3.</p>
           </div>
           <div className='icons-4'>
             <div><img src={JavascriptIcon} alt='Javascript' className='icon'></img></div>
@@ -65,7 +65,7 @@ function Skills(){
           </div>
           <div className='text text-right'>
             <h2>Machine Learning</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in aliquam massa, ac venenatis ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut pellentesque ligula, ut interdum lectus. Suspendisse potenti. </p>
+            <p>I have explored various areas of machine learning through courses and self-initiated projects. My experience includes Natural Language Processing, Reinforcement Learning, Deep Learning, Computer Vision, as well as statistics and data analysis.</p>
           </div>
         </div>
       </div>

@@ -89,10 +89,16 @@
   animation: fade-out 1s forwards;
 }
 
-/* Tablet Styles */
-@media (max-width: 768px) {
-}
-
 /* Mobile Styles */
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
+  .skills {
+    display: none;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .skills-container {
+    display: block;
+  }
 }

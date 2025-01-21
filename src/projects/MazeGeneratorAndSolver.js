@@ -43,7 +43,7 @@ function MazeGeneratorAndSolver(){
 
 
   return (
-    <section id="MazeGeneratorAndSolver" className="section project">
+    <section id="MazeGeneratorAndSolver" className="project">
       <div className='project-text animate'>
         <h1 className='project-title'>The Maze</h1>
         <h1 className='project-title blinking-cursor red-text'>{currentText}</h1>

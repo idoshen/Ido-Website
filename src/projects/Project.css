@@ -2,7 +2,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    padding: 170px 170px 30px 200px;
+    padding: 170px ;
+    place-items: center;
 }
 
 .project-text {
@@ -20,7 +21,7 @@
 }
 
 .project-title {
-    font-size: 80px;
+    font-size: 3vw;
 }
 
 .blinking-cursor:after {
@@ -30,7 +31,7 @@
 }
 
 .project-p {
-    font-size: 20px;
+    font-size: 1vw;
     padding-right: 10%;
     padding-top: 10%;
 }
@@ -55,6 +56,7 @@
 .project-media {
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 /* Tablet Styles */

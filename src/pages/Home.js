@@ -6,7 +6,6 @@ function Home() {
 
   return (
     <section id="home" className="home animate">
-      <div className="home-container">
         <div className="home-name-and-buttons">
           <div className='home-name-and-job'>
             <h1 className="home-name">Ido Shenbach</h1>
@@ -36,7 +35,6 @@ function Home() {
         <div className="home-image-container">
           <img src="./ido.jpg" alt="Ido Shenbach" className='home-image'></img>
         </div>
-      </div>
     </section>
   );
 }

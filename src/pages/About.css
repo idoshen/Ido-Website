@@ -54,27 +54,17 @@
 
 }
 
-/* Mobile Styles */
-@media (max-width: 600px) {
-    .about{
-        grid-template-columns: 1fr;
-        grid-template-rows: 0fr;
-    }
-
-    .about-text{
-        padding: 10%;
-    }
-
-    .about-title{
-        font-size: 70px;
-    }
-
-    .about-p{
-        font-size: 20px;
-    }
-}
-
 /* Tablet Styles */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
+    .about {
+        display: block;
+        padding: 0px;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .about-right {
+        display: none;
+    }
 }
 

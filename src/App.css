@@ -37,12 +37,9 @@ a {
 
 /* Tablet Styles */
 @media (max-width: 768px) {
-}
-
-/* Mobile Styles */
-@media (max-width: 600px) {
   .main-content {
-    grid-template-rows: repeat(8, 500px);
+    display: grid;
+    grid-template-rows: repeat(2, 50vh) 1fr repeat(5, 75vh);
   }
 }
 
@@ -53,17 +50,6 @@ a {
 .bold-text {
   font-weight: bold;
 }
-
-/* Section {
-  justify-self: center;
-  width: 100%;
-  border: 2px solid #e80000;
-  opacity: 0;
-} */
-
-/* .section.is-visible {
-  animation: fadeIn 1s forwards;
-} */
 
 @keyframes fade-in {
   from {

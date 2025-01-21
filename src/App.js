@@ -43,13 +43,9 @@ function App() {
 
   useEffect(() => {
     const header = document.querySelector('header');
+    const menu = document.querySelector('.menu-container');
     const navigation = document.querySelector('.navigation');
     const sections = document.querySelectorAll('section'); // Select all sections
-  
-    if (!header || sections.length === 0) {
-      console.error('Header or sections not found.');
-      return;
-    }
   
     const darkBackgroundColor = 'rgb(34, 36, 42)';
   
@@ -72,9 +68,11 @@ function App() {
         if (bgColor === darkBackgroundColor) {
           header.classList.add('light-header');
           navigation.classList.add('light-header');
+          menu.classList.add('light-header');
         } else if (bgColor !== darkBackgroundColor) {
           header.classList.remove('light-header');
           navigation.classList.remove('light-header');
+          menu.classList.remove('light-header');
         }
       }
     }

@@ -6,18 +6,14 @@
 .home {
   padding: 80px 20px 20px 20px;
   opacity: 0;
+  display: grid;
+  grid-template-columns: 180px auto auto auto 180px;
+  grid-template-rows: 20% 60% 20%;
+  place-items: center;
 }
 
 .home.is-visible {
   animation: fade-in 1s forwards;
-}
-
-.home-container {
-  display: grid;
-  grid-template-columns: 180px auto auto auto 180px;
-  grid-template-rows: 20% 60% 20%;
-  height: 100%;
-  place-items: center;
 }
 
 .home-name {
@@ -41,7 +37,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .home-name-and-job {
@@ -99,26 +94,25 @@
 
 
 /* Tablet Styles */
-@media (max-width: 768px) {
-}
-
-/* Mobile Styles */
-@media (max-width: 600px) {
-  .home {
-    padding: 10%;
-  }
-
-  .home-container{
-    grid-template-columns: 1fr;
-    grid-template-rows: 0fr;
-  }
-
+@media (max-width: 1000px) {
   .home-image-container {
     display: none;
   }
 
+  .home {
+    display: flex;
+    padding: 130px 50px 30px 50px;
+    place-items: start;
+  }
+
+  .home-name {
+    font-size: 30px;
+  }
+
+  .home-name-and-job{
+    margin-right: 0;
+  }
+
   .home-name-and-buttons {
-    padding: 10px;
   }
 }
-
