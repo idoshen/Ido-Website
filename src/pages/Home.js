@@ -10,7 +10,7 @@ function Home() {
           <div className='home-name-and-job'>
             <h1 className="home-name">Ido Shenbach</h1>
             <h2 className="home-job">Software Developer</h2>
-            <p className="home-p">experience in machine learning, computer vision, and data science. </p>
+            <p className="home-p">Coding like it's my cardio.</p>
           </div>
           <div className="home-buttons">
             <a href={IdoShenbachCV} className="home-button" download="Ido Shenbach CV.pdf">

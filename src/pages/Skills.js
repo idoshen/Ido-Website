@@ -19,12 +19,12 @@ import MatplotlibIcon from '../assets/icons/Matplotlib.svg';
 function Skills(){
   return (
     <section id="skills" className="skills">
-      <h1 className='animate'><span className='red-text'>My Skills</span></h1>
+      <h1 className='skills-title animate'><span className='red-text'>My Skills</span></h1>
       <div className='skills-container'>
         <div id='prog-lang' className='prog-lang animate'>
           <div className='text text-left'>
-            <h2>Programming Languages</h2>
-            <p>In my studies, I developed projects using Java, Python, C, and C#. I created a synthesizer in Java, worked on machine learning projects in Python (GitHub Repository), and completed two in-depth courses: one focusing on C programming and another on Object-Oriented Programming in C#.</p>
+            <h2 className='skill-title'>Programming Languages</h2>
+            <p className='skill-p'>In my studies, I developed projects using Java, Python, C, and C#. I created a synthesizer in Java, worked on machine learning projects in Python (GitHub Repository), and completed two in-depth courses: one focusing on C programming and another on Object-Oriented Programming in C#.</p>
           </div>
             <div className='icons-4'>
               <div><img src={JavaIcon} alt='Java' className='icon'></img></div>
@@ -34,20 +34,20 @@ function Skills(){
           </div>
         </div>
         <div id='plat-frame' className='plat-frame animate'>
+          <div className='text text-right'>
+            <h2 className='skill-title'>Platforms & Frameworks</h2>
+            <p className='skill-p'>I manage all my projects using Git, ensuring efficient version control and collaboration. I have experience working with .NET for application development and gained familiarity with Linux during my system programming in C course.</p>
+          </div>
           <div className='icons-3'>
             <div><img src={DotnetIcon} alt='.Net' className='icon'></img></div>
             <div><img src={LinuxIcon} alt='Linux' className='icon'></img></div>
             <div><img src={GitIcon} alt='Git' className='icon'></img></div>
           </div>
-          <div className='text text-right'>
-            <h2>Platforms & Frameworks</h2>
-            <p>I manage all my projects using Git, ensuring efficient version control and collaboration. I have experience working with .NET for application development and gained familiarity with Linux during my system programming in C course.</p>
-          </div>
         </div>
         <div id='web' className='web animate'>
           <div className='text text-left'>
-            <h2>Web Development & Tools</h2>
-            <p>I have gained hands-on experience in web development through projects like building this portfolio website and creating a Wordle Solver game. These projects allowed me to strengthen my skills in JavaScript, React, HTML5, and CSS3.</p>
+            <h2 className='skill-title'>Web Development & Tools</h2>
+            <p className='skill-p'>I have gained hands-on experience in web development through projects like building this portfolio website and creating a Wordle Solver game. These projects allowed me to strengthen my skills in JavaScript, React, HTML5, and CSS3.</p>
           </div>
           <div className='icons-4'>
             <div><img src={JavascriptIcon} alt='Javascript' className='icon'></img></div>
@@ -57,16 +57,17 @@ function Skills(){
           </div>
         </div>
         <div id='machine-learning' className='machine-learning animate'>
+          <div className='text text-right'>
+            <h2 className='skill-title'>Machine Learning</h2>
+            <p className='skill-p'>I have explored various areas of machine learning through courses and self-initiated projects. My experience includes Natural Language Processing, Reinforcement Learning, Deep Learning, Computer Vision, as well as statistics and data analysis.</p>
+          </div>
           <div className='icons-4'>
           <div><img src={NumpyIcon} alt='Numpy' className='icon big'></img></div>
             <div><img src={PytorchIcon} alt='Pytorch' className='icon big'></img></div>
             <div><img src={MatplotlibIcon} alt='Matplotlib' className='icon big'></img></div>
             <div><img src={PandasIcon} alt='Pandas' className='icon big'></img></div>
           </div>
-          <div className='text text-right'>
-            <h2>Machine Learning</h2>
-            <p>I have explored various areas of machine learning through courses and self-initiated projects. My experience includes Natural Language Processing, Reinforcement Learning, Deep Learning, Computer Vision, as well as statistics and data analysis.</p>
-          </div>
+          
         </div>
       </div>
     </section>

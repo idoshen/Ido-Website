@@ -8,38 +8,52 @@
   opacity: 0;
 }
 
-.skills h1 {
+.skills-title {
   font-size: 80px;
   opacity: 0;
 }
 
 .skills-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 60vh);
+  display: block;
   gap: 50px;
 }
 
-.skills-container > div {
+/* .skills-container > div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+} */
+
+.skills-container > div {
+  display: flex;
+  flex-direction: row; /* Default: Alternating text | icons */
+  gap: 50px; /* Space between text and icons */
+  margin-bottom: 40px;
+}
+
+.skills-container > div:nth-child(odd) {
+  flex-direction: row; /* Text | Icons */
+}
+
+.skills-container > div:nth-child(even) {
+  flex-direction: row-reverse; /* Icons | Text */
 }
 
 .icons-4 {
+  width: 50%;
+  height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   place-items: center;
-  padding: 0% 10% 0% 0%;
 }
 
 .icons-3 {
+  width: 50%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   place-items: center;
-  padding: 0% 10% 0% 0%; 
 }
 
 .icon {
@@ -52,11 +66,11 @@
   height: 200px;
 }
 
-.skills-container > div > div > h2 {
+.skill-title {
   font-size: 55px;
 }
 
-.skills-container > div > div > p {
+.skill-p {
   font-size: 25px;
   margin-top: 20px;
 }
@@ -74,12 +88,13 @@
 }
 
 .text-left{
-  padding-right: 10%;
+  width: 50%;
+}
+.text-right{
+  width: 50%;
 }
 
-.text-right{
-  padding-left: 10%;
-}
+
 
 .is-visible {
   animation: fade-in 1s forwards;
@@ -91,14 +106,55 @@
 
 /* Mobile Styles */
 @media (max-width: 1000px) {
+  
   .skills {
-    display: none;
-    padding: 0px;
-    height: 100vh;
-    width: 100vw;
+    padding: 110px 50px 30px 50px;
+    display: block;
   }
 
-  .skills-container {
-    display: block;
+  .skills-container > div {
+    flex-direction: column; /* Stack text and icons vertically */
+    text-align: center; /* Center-align text for better appearance */
+  }
+
+  .skills-container > div:nth-child(even),
+  .skills-container > div:nth-child(odd) {
+    flex-direction: column; /* Both follow the same vertical layout */
+  }
+
+  .skills-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .skill-title {
+    font-size: 25px;
+  }
+
+  .skill-p {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .text-left, .text-right {
+    text-align: left; /* Center the text */
+    width: 100%; /* Full width for better centering */
+    padding: 0; /* Remove unnecessary padding */
+  }
+
+  .icons-4, .icons-3 {
+    width: 100%; /* Full width for better centering */
+    place-items: center; /* Center the icons */
+    gap: 20px; /* Space between icons */
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .big {
+    width: 100px;
+    height: 100px;
   }
 }

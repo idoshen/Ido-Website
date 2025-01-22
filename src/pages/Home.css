@@ -102,17 +102,27 @@
   .home {
     display: flex;
     padding: 130px 50px 30px 50px;
-    place-items: start;
+    justify-content: center;
+    align-items: center;
   }
 
   .home-name {
-    font-size: 30px;
+    font-size: 40px;
+  }
+
+  .home-job {
+    font-size: 25px;
+  }
+
+  .home-p {
+    font-size: 20px;
   }
 
   .home-name-and-job{
     margin-right: 0;
   }
 
-  .home-name-and-buttons {
+  .home-button {
+    font-size: 15px;
   }
 }

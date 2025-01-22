@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Contact.css';
+import '../assets/styles/AnimatedButton.css'
 import MailIcon from '../assets/icons/Mail.svg';
 import LinkedInIcon from '../assets/icons/LinkedIn.svg';
 import GithubIcon from '../assets/icons/Github.svg';
@@ -15,8 +16,7 @@ function Contact() {
           <h2>Contact Me</h2>
         </div>
         <div className='contact-p'>
-          <p>Feel free to reach out if you have any questions, collaboration ideas, or just want to say hello!
-            I’m always excited to hear from new people and explore opportunities to work together!</p>
+          <p>Feel free to reach out if you have any questions, collaboration ideas, or just want to say hello!</p>
         </div>
         <div className="contact-buttons">
           <a href="mailto:idoshen1@gmail.com" className='animated-button'>

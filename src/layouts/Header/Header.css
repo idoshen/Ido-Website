@@ -157,7 +157,7 @@
 
 /* TODO: fix dead zone between the header and submenu */
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 
   /* Menu Container - Open State */
   .menu-container.open {
@@ -181,6 +181,8 @@
   .menu-container.close {
     display: none;
   }
+
+  /* TODO: fix light sub-menu of burger bug */
 
   /* Burger Menu Styling */
   .burger-menu {
