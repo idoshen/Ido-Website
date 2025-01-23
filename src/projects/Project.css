@@ -2,26 +2,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 170px 200px 100px 150px;
+    padding: 170px 200px 100px 200px;
 }
 
 .project-grid-container {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    gap: 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .project-text {
-    border: red 4px solid;
+    /* REMOVE: For debugging purposes */
+    /* border: red 4px solid; */
+    width: 50%;
     overflow: hidden;
     opacity: 0;
     z-index: 1;
 }
 
 .project-text.is-visible {
-    animation: fade-in 1s ease-in-out forwards;
+    animation: fade-in 1s ease-in-out forwards, slide-up 1s ease-in-out forwards;
     animation-delay: 0.3s;
 }
 
@@ -45,22 +46,32 @@
     padding-top: 10%;
 }
 
-.project-media-container {
-    border: red 4px solid;
+.project-media-container-left-to-right, .project-media-container-right-to-left {
+    /* REMOVE: For debugging purposes */
+    /* border: red 4px solid; */
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
     opacity: 1;
     z-index: 2;
 }
 
-.project-media-container.is-visible{
-    animation: slide-in  1s ease-in-out forwards;
+.project-media-container-left-to-right.is-visible{
+    animation: slide-in-left-to-right  1s ease-in-out forwards;
 }
 
-.project-media-container.is-hidden{
-    animation: slide-out  1s ease-in-out forwards;
+.project-media-container-left-to-right.is-hidden{
+    animation: slide-out-left-to-right  1s ease-in-out forwards;
+}
+
+.project-media-container-right-to-left.is-visible{
+    animation: slide-in-right-to-left  1s ease-in-out forwards;
+}
+
+.project-media-container-right-to-left.is-hidden{
+    animation: slide-out-right-to-left  1s ease-in-out forwards;
 }
 
 .project-media {
@@ -83,13 +94,19 @@
         overflow: hidden;
     }
 
-    .project-media-container {
+    .project-media-container-left-to-right {
         display: none;
     }
 
+    .project-media-container-right-to-left {
+        display: none;
+    }
+
+    
     .project-text {
-        border: red 4px solid;
+        border: red 4px solid; /* REMOVE: For debugging purposes */
         overflow: hidden;
+        width: 100%;
         opacity: 0;
         z-index: 1;
     }

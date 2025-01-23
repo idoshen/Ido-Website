@@ -1,12 +1,13 @@
 import React from 'react';
 import './Project.css';
+import WordelImg from '../assets/images/Wordle.png';
 
 function Wordle(){
   return (
     <section id="Wordle" className="section project">
       <div className="project-grid-container">
-        <div className='project-media-container'>
-          
+        <div className='project-media-container-right-to-left animate'>
+          <img className='project-media' src={WordelImg} alt='Wordle Solver'></img>
         </div>
         <div className='project-text animate'>
           <h1 className='project-title'>The Wordle Solver</h1>

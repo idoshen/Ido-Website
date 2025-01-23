@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import './Header.css';
-import BurgerIcon from '../../assets/burger.svg';
+import BurgerLightIcon from '../../assets/Burger_Light.svg';
+import BurgerDarkIcon from '../../assets/Burger_Dark.svg';
 
 const Header = () => {
 
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isLightHeader, setIsLightHeader] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -27,7 +29,15 @@ const Header = () => {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
         console.log('Menu is open:', isMenuOpen);
-      };
+    };
+
+    
+    // Checks if the header is dark or light by the class name
+    useEffect(() => {
+        const header = document.querySelector('.header');
+        setIsLightHeader(header.classList.contains('light-header'));
+        console.log('Header is dark:', isLightHeader);
+    }, [isLightHeader]);
 
     return (
         <header className={`header animate ${isScrolled ? 'scrolled-down' : 'scrolled-to-top'}`}>
@@ -35,7 +45,7 @@ const Header = () => {
                 <a className='header-name' href="#home">IDO SHENBACH</a>
             </div>
             <div className="burger-menu" >
-                <img src={BurgerIcon} alt="Menu" className='burger-icon' onClick={toggleMenu}/>
+                <img src={isLightHeader ? BurgerDarkIcon : BurgerLightIcon } alt="Menu" className='burger-icon' onClick={toggleMenu}/>
             </div>
             <div className={`menu-container ${isMenuOpen ? "open" : "close"} `}>
                 <nav className="navigation">
@@ -56,7 +66,7 @@ const Header = () => {
                         <ul className="submenu">
                             <li><a href="#SynthesizerApp">Synthesizer App</a></li>
                             <li><a href="#MazeGeneratorAndSolver">Maze Generator And Solver</a></li>
-                            <li><a href="#Wordle">Wordle</a></li>
+                            <li><a href="#Wordle">Wordle Solver</a></li>
                             <li><a href="#HTTPServer">HTTP-Server</a></li>
                         </ul>
                         </li>

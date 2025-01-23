@@ -4,7 +4,7 @@ import JavaIcon from '../assets/icons/Java.svg';
 import CIcon from '../assets/icons/C.svg';
 import PythonIcon from '../assets/icons/Python.svg';
 import CSharpIcon from '../assets/icons/CSharp.svg';
-import GitIcon from '../assets/icons/Git.svg';
+import GitIcon from '../assets/icons/Github_Light.svg';
 import DotnetIcon from '../assets/icons/Dotnet.svg';
 import LinuxIcon from '../assets/icons/Linux.svg'; 
 import JavascriptIcon from '../assets/icons/Javascript.svg';

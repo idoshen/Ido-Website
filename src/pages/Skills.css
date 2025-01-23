@@ -11,11 +11,11 @@
 .skills-title {
   font-size: 80px;
   opacity: 0;
+  margin-bottom: 20px;
 }
 
 .skills-container {
   display: block;
-  gap: 50px;
 }
 
 /* .skills-container > div {
@@ -24,11 +24,12 @@
   grid-template-rows: 1fr;
 } */
 
+
 .skills-container > div {
   display: flex;
   flex-direction: row; /* Default: Alternating text | icons */
-  gap: 50px; /* Space between text and icons */
-  margin-bottom: 40px;
+  gap: 100px; /* Space between text and icons */
+  margin-bottom: 100px;
 }
 
 .skills-container > div:nth-child(odd) {
@@ -97,7 +98,7 @@
 
 
 .is-visible {
-  animation: fade-in 1s forwards;
+  animation: fade-in 1s forwards, slide-up 1s forwards;
 }
 
 .is-hidden {

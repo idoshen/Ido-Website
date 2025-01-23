@@ -2,8 +2,8 @@ import React from 'react';
 import './Contact.css';
 import '../assets/styles/AnimatedButton.css'
 import MailIcon from '../assets/icons/Mail.svg';
-import LinkedInIcon from '../assets/icons/LinkedIn.svg';
-import GithubIcon from '../assets/icons/Github.svg';
+import LinkedInIcon from '../assets/icons/LinkedIn_Light.svg';
+import GithubIcon from '../assets/icons/Github_Light.svg';
 import PhoneIcon from '../assets/icons/Phone.svg';
 
 
@@ -19,26 +19,26 @@ function Contact() {
           <p>Feel free to reach out if you have any questions, collaboration ideas, or just want to say hello!</p>
         </div>
         <div className="contact-buttons">
-          <a href="mailto:idoshen1@gmail.com" className='animated-button'>
+          <a href="mailto:idoshen1@gmail.com" className='contact-button animated-button'>
             <span>Mail</span>
             <img src={MailIcon} alt="Mail" />
           </a>
-          <a href="https://www.linkedin.com/in/idoshen/" className='animated-button'>
+          <a href="https://www.linkedin.com/in/idoshen/" className='contact-button animated-button'>
             <span>LinkedIn</span>
             <img src={LinkedInIcon} alt="LinkedIn" />
           </a>
-          <a href="https://www.github.com/idoshen" className='animated-button'>
+          <a href="https://www.github.com/idoshen" className='contact-button animated-button'>
             <span>Github</span>
             <img src={GithubIcon} alt="Github" />
           </a>
-          <a href="tel:+972544998258" className='animated-button'>
+          <a href="tel:+972544998258" className='contact-button animated-button'>
             <span>Phone</span>
             <img src={PhoneIcon} alt="Phone" />
           </a>
         </div>
-        <div className='contact-rights'>
-          <h3>&copy; 2025 Ido Shenbach. All rights reserved.</h3>
-        </div>
+      </div>
+      <div className='contact-rights animate'>
+          <p className='contact-rights-text'>&copy; 2025 Ido Shenbach. All rights reserved.</p>
       </div>
     </section>
   );

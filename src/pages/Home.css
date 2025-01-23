@@ -13,7 +13,11 @@
 }
 
 .home.is-visible {
-  animation: fade-in 1s forwards;
+  animation: fade-in 1s forwards, slide-up 1s forwards;
+}
+
+.home.is-hidden {
+  animation: fade-out 1s forwards;
 }
 
 .home-name {
@@ -74,7 +78,7 @@
   align-items: center;
   font-family: 'sofia-pro' sans-serif;
   background-color: #F3F3F3;
-  color: rgb(0, 0, 0);
+  color: #22242a;
   border: 2px solid #e80000;
   width: 100%;
   max-width: 200px;
@@ -86,12 +90,9 @@
 }
 
 .home-button:hover {
-  background-color: #e80000;
-  color: rgb(255, 255, 255);
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5);
 }
-
 
 /* Tablet Styles */
 @media (max-width: 1000px) {

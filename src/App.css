@@ -3,9 +3,11 @@
   src: url('./assets/fonts/Sofia Pro Light Az.otf') format('opentype');
 }
 
-section {
+
+/* REMOVE: For debugging purposes */
+/* section {
   border: #e80000 2px solid;
-}
+} */
 
 *{
   margin: 0;
@@ -69,43 +71,65 @@ a {
   }
 }
 
-@keyframes slide-in {
-  0% {
+@keyframes slide-in-left-to-right {
+  from {
       transform: translateX(-100%);
       /* clip-path: inset(0 100% 0 0);  */
   }
-  100% {
+  to {
       transform: translateX(0);
       /* clip-path: inset(0 0 0 0); */
   }
 }
 
-@keyframes slide-out {
-  0% {
+@keyframes slide-out-left-to-right {
+  from {
       transform: translateX(0);
       /* clip-path: inset(0 0 0 0); */
   }
-  100% {
+  to {
       transform: translateX(-100%);
       /* clip-path: inset(0 100% 0 0); */
   }
 }
 
-@keyframes slide-up {
-  0% {
-      transform: translateY(10%);
+@keyframes slide-in-right-to-left {
+  from {
+      transform: translateX(100%);
+      /* clip-path: inset(0 0 0 100%); */
   }
-  100% {
+  to {
+      transform: translateX(0);
+      /* clip-path: inset(0 0 0 0); */
+  }
+}
+
+@keyframes slide-out-right-to-left {
+  from {
+      transform: translateX(0);
+      /* clip-path: inset(0 0 0 0); */
+  }
+  to {
+      transform: translateX(100%);
+      /* clip-path: inset(0 0 0 100%); */
+  }
+}
+
+@keyframes slide-up {
+  from {
+      transform: translateY(16px);
+  }
+  to {
       transform: translateY(0);
   }
 }
 
 @keyframes slide-down {
-  0% {
+  from {
       transform: translateY(0);
   }
-  100% {
-      transform: translateY(10%);
+  to {
+      transform: translateY(4px);
   }
 }
 

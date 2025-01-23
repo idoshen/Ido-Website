@@ -1,5 +1,6 @@
 import React from 'react';
 import './Project.css';
+import ServerImg from '../assets/images/server_image.png';
 
 function HTTPServer(){
   return (
@@ -11,8 +12,8 @@ function HTTPServer(){
                                   <span className='bold-text'>Real-Time Data Logging:</span> Captures session data and displays it in dynamic HTML tables for tracking request parameters.<br></br><br></br>
                                   <span className='bold-text'>Multithreaded Request Handling:</span> Efficiently manages multiple client connections simultaneously using a thread pool, ensuring high performance under load.</p>
         </div>
-        <div className='project-media-container animate'>
-          <img src='./server_image.png' alt='server' className='project-media'></img>
+        <div className='project-media-container-left-to-right animate'>
+          <img src={ServerImg} alt='server' className='project-media'></img>
         </div>
       </div>
     </section>

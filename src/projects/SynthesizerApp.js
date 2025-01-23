@@ -1,5 +1,6 @@
 import React from 'react';
 import './Project.css';
+import SynthesizerImage from '../assets/images/Synthesizer.png';
 
 // DSP (Digital Signal Processing)
 // Java GUI Development
@@ -13,8 +14,8 @@ function SynthesizerApp(){
   return (
     <section id="SynthesizerApp" className="section project ">
       <div className="project-grid-container">
-        <div className='project-media-container'>
-          
+        <div className='project-media-container-right-to-left animate'>
+          <img src={SynthesizerImage} alt='maze' className='project-media'></img>
         </div>
         <div className='project-text animate'>
             <h1 className='project-title'>The Synthesizer</h1>
