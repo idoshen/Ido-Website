@@ -65,9 +65,8 @@
 .home-buttons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
   gap: 10px;
-  justify-items: center;
-  align-items: start;
   max-width: 410px;
   margin-top: 20px;
 }

@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.css';
 import Header from './layouts/Header/Header';
 import Home from './pages/Home';
@@ -11,6 +11,7 @@ import HTTPServer from './projects/HTTP-Server';
 import MazeGeneratorAndSolver from './projects/MazeGeneratorAndSolver';
 
 function App() {
+  const [isLight, setIsLight] = useState(true);
 
   useEffect(() => {
     const visibleThreshold = 0.5; // Threshold for "is-visible"
@@ -43,9 +44,7 @@ function App() {
 
   useEffect(() => {
     const header = document.querySelector('header');
-    const menu = document.querySelector('.menu-container');
-    const navigation = document.querySelector('.navigation');
-    const sections = document.querySelectorAll('section'); // Select all sections
+    const sections = document.querySelectorAll('section');
   
     const darkBackgroundColor = 'rgb(34, 36, 42)';
   
@@ -66,13 +65,9 @@ function App() {
         const bgColor = window.getComputedStyle(sectionUnderHeader).backgroundColor;
 
         if (bgColor === darkBackgroundColor) {
-          header.classList.add('light-header');
-          navigation.classList.add('light-header');
-          menu.classList.add('light-header');
+          setIsLight(true);
         } else if (bgColor !== darkBackgroundColor) {
-          header.classList.remove('light-header');
-          navigation.classList.remove('light-header');
-          menu.classList.remove('light-header');
+          setIsLight(false);
         }
       }
     }
@@ -90,7 +85,7 @@ function App() {
 
   return (
       <div className="App">
-        <Header />
+        <Header isLight={isLight} />
         <main className="main-content">
           <Home />
           <About />
