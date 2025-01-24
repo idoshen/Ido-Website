@@ -34,7 +34,8 @@ a {
 
 .main-content {
   display: grid;
-  grid-template-rows: repeat(2, 100vh) auto repeat(5, 100vh);
+  /* grid-template-rows: repeat(2, 100vh) auto repeat(5, 100vh); */
+  grid-template-rows: repeat(11, 100vh);
 }
 
 /* Tablet Styles */

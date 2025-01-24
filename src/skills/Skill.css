@@ -1,0 +1,128 @@
+.skill {
+    background-color: #22242a;
+    color: #F3F3F3;
+    padding: 170px 200px 100px 200px;
+}
+
+.skill-container {
+    display: flex;
+    gap: 100px;
+}
+
+.left-to-right {
+    flex-direction: row; /* Text | Icons */
+}
+
+.right-to-left{
+    flex-direction: row-reverse; /* Icons | Text */
+}
+
+.icons-4 {
+    width: 50%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+}
+
+.icons-3 {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+}
+
+.icon {
+    width: 117px;
+    height: 117px;
+}
+
+.big-icon {
+    width: 200px;
+    height: 200px;
+}
+
+.skill-title {
+    font-size: 55px;
+}
+
+.skill-p {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.icons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-left, .text-right{
+    width: 50%;
+}
+  
+.is-visible {
+    animation: fade-in 1s forwards, slide-up 1s forwards;
+}
+
+.is-hidden {
+    animation: fade-out 1s forwards;
+} 
+  
+  /* Mobile Styles */
+  @media (max-width: 1000px) {
+    
+    .skill {
+      padding: 110px 50px 30px 50px;
+      display: block;
+    }
+  
+    .skill-container {
+      flex-direction: column; /* Stack text and icons vertically */
+      text-align: center; /* Center-align text for better appearance */
+    }
+  
+    .skill-container {
+      flex-direction: column; /* Both follow the same vertical layout */
+    }
+  
+    .skill-title {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+  
+    .skill-p {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  
+    .text-left, .text-right {
+      text-align: left;
+      width: 100%;
+      padding: 0;
+    }
+  
+    .icons-4, .icons-3 {
+      width: 100%;
+      place-items: center;
+      gap: 20px;
+    }
+  
+    .icon {
+      width: 50px;
+      height: 50px;
+    }
+    
+    .big {
+      width: 100px;
+      height: 100px;
+    }
+  }

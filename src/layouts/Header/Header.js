@@ -48,7 +48,7 @@ const Header = ({ isLight }) => {
                             <li><a href="#prog-lang">Programming Languages</a></li>
                             <li><a href="#plat-frame">Platforms & Frameworks</a></li>
                             <li><a href="#web">Web Development & Tools</a></li>
-                            <li><a href="#machine-learning">Machine Learning</a></li>
+                            <li><a href="#ml">Machine Learning</a></li>
                         </ul>
                         </li>
                         <li className="has-submenu">

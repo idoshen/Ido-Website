@@ -3,7 +3,10 @@ import './App.css';
 import Header from './layouts/Header/Header';
 import Home from './pages/Home';
 import About from './pages/About';
-import Skills from './pages/Skills';
+import ProgrammingLang from './skills/ProgrammingLang';
+import PlatformAndFrame from './skills/PlatformAndFrame';
+import Web from './skills/Web';
+import MachineLearning from './skills/MachineLearning';
 import Contact from './pages/Contact';
 import SynthesizerApp from './projects/SynthesizerApp';
 import Wordle from './projects/Wordle';
@@ -89,7 +92,10 @@ function App() {
         <main className="main-content">
           <Home />
           <About />
-          <Skills />
+          <ProgrammingLang />
+          <PlatformAndFrame />
+          <Web />
+          <MachineLearning />
           <SynthesizerApp />
           <MazeGeneratorAndSolver />
           <Wordle />
