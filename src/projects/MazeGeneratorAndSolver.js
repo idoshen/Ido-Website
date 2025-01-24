@@ -48,8 +48,8 @@ function MazeGeneratorAndSolver(){
             <span className='project-tag'>Java</span>
             <span className='project-tag'>Problem Solving</span>
           </div>
-          <p className='project-p'><span className='bold-text'>Dynamic Maze Generation:</span> Implements an algorithm to randomly generate solvable mazes of varying difficulty levels.<br></br><br></br>
-                                <span className='bold-text'>Efficient Maze Solving:</span> Features an optimized solver that uses algorithms like DFS or BFS to find the shortest path through the maze.<br></br><br></br>
+          <p className='project-p'><span className='bold-text'>Dynamic Maze Generation:</span> Implements an algorithm to randomly generate solvable mazes of varying difficulty levels.<br></br>
+                                <span className='bold-text'>Efficient Maze Solving:</span> Features an optimized solver that uses algorithms like DFS or BFS to find the shortest path through the maze.<br></br>
                                 <span className='bold-text'>Interactive Visualization:</span> Provides a real-time visual representation of the maze creation and solving process, allowing users to explore and modify the maze.</p>
         </div>
         <div className='project-media-container-left-to-right animate'>

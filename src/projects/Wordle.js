@@ -17,8 +17,8 @@ function Wordle(){
             <span className='project-tag'>React</span>
             <span className='project-tag'>Python</span>
           </div>
-          <p className='project-p'><span className='bold-text'>Entropy Calculation:</span> Assesses word information gain for optimized guesses.<br></br><br></br>
-                                  <span className='bold-text'>Dynamic Word Filtering:</span> Continuously updates possibilities based on game feedback.<br></br><br></br>
+          <p className='project-p'><span className='bold-text'>Entropy Calculation:</span> Assesses word information gain for optimized guesses.<br></br>
+                                  <span className='bold-text'>Dynamic Word Filtering:</span> Continuously updates possibilities based on game feedback.<br></br>
                                   <span className='bold-text'>Efficient Guessing Process:</span> Refines solutions in real-time, minimizing the number of guesses.</p>
         </div>
       </div>

@@ -10,7 +10,7 @@ function Web() {
     return (
         <section id="web" className="skill">
             <div className="skill-container left-to-right animate">
-                <div className='text text-left'>
+                <div className='text'>
                     <h2 className='skill-title'>Web Development & Tools</h2>
                     <p className='skill-p'>I have gained hands-on experience in web development through projects like building this portfolio website and creating a Wordle Solver game. These projects allowed me to strengthen my skills in JavaScript, React, HTML5, and CSS3.</p>
                 </div>

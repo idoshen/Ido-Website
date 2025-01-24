@@ -1,13 +1,9 @@
 .project {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 170px 200px 100px 200px;
 }
 
 .project-grid-container {
     display: flex;
-    /* overflow: hidden; */
 }
 
 .project-text {
@@ -63,12 +59,12 @@
 
 .project-p {
     font-size: 1.11vw;
+    padding: 0 1.5rem 1.5rem 0;
 }
 
 .project-media-container-left-to-right, .project-media-container-right-to-left {
     /* REMOVE: For debugging purposes */
     /* border: red 4px solid; */
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,11 +119,20 @@
 
     
     .project-text {
-        border: red 4px solid; /* REMOVE: For debugging purposes */
+        /* REMOVE: For debugging purposes */
+        /* border: red 4px solid; */
         overflow: hidden;
         width: 100%;
         opacity: 0;
         z-index: 1;
+    }
+
+    .project-text.is-visible {
+        animation: fade-in 0.3s ease-in-out forwards;
+    }
+    
+    .project-text.is-hidden {
+        animation: fade-out 0.3s ease-in-out forwards;
     }
 
     .project-title {
@@ -144,5 +149,4 @@
         font-size: 20px;
         margin-top: 20px;
     }
-
 }

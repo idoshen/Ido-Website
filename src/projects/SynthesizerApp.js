@@ -25,8 +25,8 @@ function SynthesizerApp(){
             <span className='project-tag'>Java</span>
             <span className='project-tag'>GUI</span>
           </div>
-          <p className='project-p'><span className='bold-text'>Real-Time DSP Sound Synthesis:</span> Generates and processes audio in real-time using advanced oscillators and waveforms.<br></br><br></br>
-                                   <span className='bold-text'>Comprehensive Audio Effects:</span> Includes ADSR, Saturation, Delay, Tremolo, Vibrato, and more for detailed sound manipulation.<br></br><br></br>
+          <p className='project-p'><span className='bold-text'>Real-Time DSP Sound Synthesis:</span> Generates and processes audio in real-time using advanced oscillators and waveforms.<br></br>
+                                   <span className='bold-text'>Comprehensive Audio Effects:</span> Includes ADSR, Saturation, Delay, Tremolo, Vibrato, and more for detailed sound manipulation.<br></br>
                                    <span className='bold-text'>Interactive DSP Control:</span> Allows users to control frequency, modulation, and effects through intuitive input and real-time adjustments.</p>
         </div>
       </div>  

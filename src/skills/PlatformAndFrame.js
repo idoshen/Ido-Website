@@ -8,7 +8,7 @@ function PlatformAndFrame() {
     return (
         <section id="plat-frame" className="skill">
             <div className="skill-container right-to-left animate">
-                <div className="text text-right">
+                <div className="text">
                     <h2 className="skill-title">Platforms & Frameworks</h2>
                     <p className="skill-p">
                     I manage all my projects using Git, ensuring efficient version control

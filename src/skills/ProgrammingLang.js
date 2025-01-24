@@ -9,7 +9,7 @@ function ProgrammingLang() {
     return (
         <section id="prog-lang" className="skill">
             <div className="skill-container left-to-right animate">
-                <div className="text text-left">
+                <div className="text">
                     <h2 className="skill-title">Programming Languages</h2>
                     <p className="skill-p">
                     In my studies, I developed projects using Java, Python, C, and C#. I

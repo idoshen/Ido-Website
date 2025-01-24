@@ -12,20 +12,15 @@ section {
     background-color: #f3f3f3;
 }
 
-.title-container {
-    text-align: center;
-    max-width: 800px; 
-}
-
 .skills-title-text {
-    font-size: 2.5rem;
+    font-size: 100px;
     font-weight: bold;
     color: #f3f3f3;
     margin: 0;
 }
 
 .projects-title-text {
-    font-size: 2.5rem;
+    font-size: 100px;
     font-weight: bold;
     color: #22242a;
     margin: 0;

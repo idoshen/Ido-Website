@@ -37,3 +37,30 @@
     top: -100%;
     opacity: 0;
 }
+
+@media (max-width: 1000px) {
+    .animated-button > img {
+        width: 35px;
+        height: 35px;
+        top: 50%;
+        opacity: 1;
+        height: 75%;
+        width: auto;
+    }
+
+    .animated-button > span {
+        display: none; /* Hide text for mobile */
+    }
+
+    .animated-button:hover > img,
+    .animated-button:hover > span {
+        top: 50%;
+        opacity: 1;
+        transition: none;
+    }
+
+    .animated-button:active {
+        transform: scale(0.9);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+}

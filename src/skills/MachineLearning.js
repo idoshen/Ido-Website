@@ -9,7 +9,7 @@ function MachineLearning() {
     return (
         <section id="ml" className="skill">
             <div className="skill-container right-to-left animate">
-                <div className='text text-right'>
+                <div className='text'>
                     <h2 className='skill-title'>Machine Learning</h2>
                     <p className='skill-p'>I have explored various areas of machine learning through courses and self-initiated projects. My experience includes Natural Language Processing, Reinforcement Learning, Deep Learning, Computer Vision, as well as statistics and data analysis.</p>
                 </div>
