@@ -1,0 +1,38 @@
+/* Title.css */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills-title {
+    background-color: #22242a;
+}
+
+.projects-title {
+    background-color: #f3f3f3;
+}
+
+.title-container {
+    text-align: center;
+    max-width: 800px; 
+}
+
+.skills-title-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f3f3f3;
+    margin: 0;
+}
+
+.projects-title-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #22242a;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .title-text {
+        font-size: 2rem;
+    }
+}

@@ -52,7 +52,7 @@ const Header = ({ isLight }) => {
                         </ul>
                         </li>
                         <li className="has-submenu">
-                        <a href="#SynthesizerApp">Projects</a>
+                        <a href="#projects">Projects</a>
                         <ul className="submenu">
                             <li><a href="#SynthesizerApp">Synthesizer App</a></li>
                             <li><a href="#MazeGeneratorAndSolver">Maze Generator And Solver</a></li>

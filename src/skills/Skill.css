@@ -79,7 +79,6 @@
   
   /* Mobile Styles */
   @media (max-width: 1000px) {
-    
     .skill {
       padding: 110px 50px 30px 50px;
       display: block;
@@ -121,7 +120,7 @@
       height: 50px;
     }
     
-    .big {
+    .big-icon {
       width: 100px;
       height: 100px;
     }

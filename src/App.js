@@ -3,15 +3,16 @@ import './App.css';
 import Header from './layouts/Header/Header';
 import Home from './pages/Home';
 import About from './pages/About';
+import Title from './layouts/Title/Title';
 import ProgrammingLang from './skills/ProgrammingLang';
 import PlatformAndFrame from './skills/PlatformAndFrame';
 import Web from './skills/Web';
 import MachineLearning from './skills/MachineLearning';
-import Contact from './pages/Contact';
 import SynthesizerApp from './projects/SynthesizerApp';
+import MazeGeneratorAndSolver from './projects/MazeGeneratorAndSolver';
 import Wordle from './projects/Wordle';
 import HTTPServer from './projects/HTTP-Server';
-import MazeGeneratorAndSolver from './projects/MazeGeneratorAndSolver';
+import Contact from './pages/Contact';
 
 function App() {
   const [isLight, setIsLight] = useState(true);
@@ -92,10 +93,12 @@ function App() {
         <main className="main-content">
           <Home />
           <About />
+          <Title id="skills" title="Skills" className="skills-title" />
           <ProgrammingLang />
           <PlatformAndFrame />
           <Web />
           <MachineLearning />
+          <Title id="projects" title="Projects" className="projects-title"/>
           <SynthesizerApp />
           <MazeGeneratorAndSolver />
           <Wordle />
