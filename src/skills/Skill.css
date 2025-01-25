@@ -46,11 +46,11 @@
 }
 
 .skill-title {
-    font-size: 55px;
+    font-size: 5vw;
 }
 
 .skill-p {
-    font-size: 25px;
+    font-size: 1.5vw;
     margin-top: 20px;
 }
 
@@ -79,17 +79,10 @@
 @media (max-width: 1000px) {
   .skill {
     padding: 110px 50px 30px 50px;
-    display: flex;
   }
 
   .skill-container {
-    flex-direction: column; /* Stack text and icons vertically */
-    /* text-align: center; Center-align text for better appearance */
-  }
-
-  .skill-container {
-    flex-direction: column; /* Both follow the same vertical layout */
-    gap: 10px;
+    display: block;
   }
 
   .skill-title {

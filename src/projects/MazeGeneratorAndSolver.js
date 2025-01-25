@@ -38,7 +38,10 @@ function MazeGeneratorAndSolver(){
 
   return (
     <section id="MazeGeneratorAndSolver" className="project">
-      <div className="project-grid-container">
+      <div className="project-container right-to-left">
+        <div className='project-media-container-left-to-right animate'>
+          <img src={MazeGift} alt='maze' className='project-media'></img>
+        </div>
         <div className='project-text animate'>
           <h1 className='project-title'>The Maze</h1>
           <h1 className='project-title blinking-cursor red-text'>{currentText}</h1>
@@ -52,9 +55,7 @@ function MazeGeneratorAndSolver(){
                                 <span className='bold-text'>Efficient Maze Solving:</span> Features an optimized solver that uses algorithms like DFS or BFS to find the shortest path through the maze.<br></br>
                                 <span className='bold-text'>Interactive Visualization:</span> Provides a real-time visual representation of the maze creation and solving process, allowing users to explore and modify the maze.</p>
         </div>
-        <div className='project-media-container-left-to-right animate'>
-          <img src={MazeGift} alt='maze' className='project-media'></img>
-        </div>
+        
       </div>
     </section>
   );

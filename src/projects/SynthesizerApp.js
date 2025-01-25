@@ -12,8 +12,8 @@ import SynthesizerImage from '../assets/images/Synthesizer.png';
 function SynthesizerApp(){
 
   return (
-    <section id="SynthesizerApp" className="section project ">
-      <div className="project-grid-container">
+    <section id="SynthesizerApp" className="project ">
+      <div className="project-container left-to-right">
         <div className='project-media-container-right-to-left animate'>
           <img src={SynthesizerImage} alt='maze' className='project-media'></img>
         </div>

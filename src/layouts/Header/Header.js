@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import './Header.css';
 import BurgerLightIcon from '../../assets/Burger_Light.svg';
 import BurgerDarkIcon from '../../assets/Burger_Dark.svg';
@@ -7,6 +7,8 @@ const Header = ({ isLight }) => {
 
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const menuRef = useRef(null);
+    const burgerButtonRef = useRef(null);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -29,15 +31,39 @@ const Header = ({ isLight }) => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const handleClickOutside = (event) => {
+        if (
+            menuRef.current &&
+            !menuRef.current.contains(event.target) &&
+            burgerButtonRef.current &&
+            !burgerButtonRef.current.contains(event.target)
+        ) {
+            setIsMenuOpen(false);
+        }
+    };
+
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.addEventListener('mousedown', handleClickOutside);
+        } else {
+            document.removeEventListener('mousedown', handleClickOutside);
+        }
+
+        // Cleanup listener on component unmount
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [isMenuOpen]);
+
     return (
         <header className={`header animate ${isScrolled ? 'scrolled-down' : 'scrolled-to-top'} ${isLight ? 'light-header' : ''}`}>
             <div className='header-name-container'>  
                 <a className='header-name' href="#home">IDO SHENBACH</a>
             </div>
             <div className="burger-menu" >
-                <img src={isLight ? BurgerDarkIcon : BurgerLightIcon } alt="Menu" className='burger-icon' onClick={toggleMenu}/>
+                <img src={isLight ? BurgerDarkIcon : BurgerLightIcon } alt="Menu" className='burger-icon' ref={burgerButtonRef} onClick={toggleMenu}/>
             </div>
-            <div className={`menu-container ${isMenuOpen ? "open" : "close"} ${isLight ? 'light-header' : ''}`}>
+            <div ref={menuRef} className={`menu-container ${isMenuOpen ? "open" : "close"} ${isLight ? 'light-header' : ''}`}>
                 <nav className={`navigation ${isLight ? 'light-header' : ''}`}>
                     <ul>
                         <li><a href="#home">Home</a></li>

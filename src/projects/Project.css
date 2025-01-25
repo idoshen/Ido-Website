@@ -1,9 +1,19 @@
 .project {
-    padding: 170px 200px 100px 200px;
+    padding: 220px 200px 100px 200px;
+    color: #22242a;
 }
 
-.project-grid-container {
+.project-container {
     display: flex;
+    gap: 50px;
+}
+
+.left-to-right {
+    flex-direction: row; /* Text | Icons */
+}
+
+.right-to-left{
+    flex-direction: row-reverse; /* Icons | Text */
 }
 
 .project-text {
@@ -102,37 +112,45 @@
         padding: 110px 50px 30px 50px;
     }
 
-    .project-grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        overflow: hidden;
+    .project-container {
+        display: flex;
+        flex-direction: column; /* Stack text and media vertically */
+        align-items: center;
     }
 
-    .project-media-container-left-to-right {
-        display: none;
-    }
-
-    .project-media-container-right-to-left {
-        display: none;
-    }
-
-    
     .project-text {
         /* REMOVE: For debugging purposes */
         /* border: red 4px solid; */
-        overflow: hidden;
+        /* overflow: hidden; */
         width: 100%;
         opacity: 0;
         z-index: 1;
     }
 
     .project-text.is-visible {
-        animation: fade-in 0.3s ease-in-out forwards;
+        animation: fade-in 0.5s ease-in-out forwards;
+        animation-delay: none;
     }
-    
-    .project-text.is-hidden {
-        animation: fade-out 0.3s ease-in-out forwards;
+
+    .project-media-container-left-to-right,
+    .project-media-container-right-to-left {
+        /* REMOVE: For debugging purposes */
+        /* border: red 4px solid; */
+        width: 50%;
+    }
+
+    .project-media-container-left-to-right.is-visible,
+    .project-media-container-right-to-left.is-visible {
+        /* REMOVE: For debugging purposes */
+        /* border: red 4px solid; */
+        animation: none;
+    }
+
+    .project-media-container-left-to-right.is-hidden,
+    .project-media-container-right-to-left.is-hidden {
+        /* REMOVE: For debugging purposes */
+        /* border: red 4px solid; */
+        animation: none;
     }
 
     .project-title {

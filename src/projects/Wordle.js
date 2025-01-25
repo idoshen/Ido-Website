@@ -4,8 +4,8 @@ import WordelImg from '../assets/images/Wordle.png';
 
 function Wordle(){
   return (
-    <section id="Wordle" className="section project">
-      <div className="project-grid-container">
+    <section id="Wordle" className="project">
+      <div className="project-container left-to-right">
         <div className='project-media-container-right-to-left animate'>
           <img className='project-media' src={WordelImg} alt='Wordle Solver'></img>
         </div>

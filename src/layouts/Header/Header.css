@@ -111,7 +111,7 @@
   display: block;
   position: absolute;
   background-color: #22242a;
-  top: 100%;
+  top: 140%;
   left: 50%;
   transform: translateX(-50%);
   padding: 10px;
@@ -119,8 +119,22 @@
   box-shadow: 0 6px 16px 2px rgba(0, 0, 0, 0.5);
   z-index: 1000;
   opacity: 0;
-  transition: opacity 0.3s ease,visibility 0s linear 0.3s;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
   width: 280px;
+}
+
+.submenu::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 25%;
+  width: 40%;
+  background: transparent;
+  z-index: 1000; /* Ensure it stays above */
+  place-items: center;
 }
 
 .submenu li a {
@@ -158,9 +172,7 @@
 /* TODO: fix dead zone between the header and submenu */
 
 @media (max-width: 1000px) {
-
-  /* Menu Container - Open State */
-  .menu-container.open {
+  .menu-container {
     display: block;
     position: absolute;
     top: 80px;
@@ -170,16 +182,23 @@
     border-radius: 20px;
     z-index: 1000;
     padding: 20px;
-    transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .open {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s linear 0s;
+  }
+
+  .close {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s linear 0s;
   }
 
   .menu-container.light-header {
     background-color: rgb(249, 249, 249); /* light background */
     color: #22242a;
-  }
-
-  .menu-container.close {
-    display: none;
   }
 
   /* TODO: fix light sub-menu of burger bug */
@@ -227,7 +246,7 @@
 
   .header-name {
     padding-left: 10px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     text-decoration: none;
     /* color: white; */
@@ -253,20 +272,32 @@
     transition: color 0.3s ease;
   }
 
-  /* Submenu Styling */
+  .navigation ul li a:hover {
+    color: none;
+    transform: none;
+  }
+
   .submenu {
     list-style: none;
     padding: 0;
     margin: 10px 0 0 20px;
-    display: none; /* Hidden by default */
+    visibility: hidden; /* Start hidden */
+    opacity: 0; /* Fully transparent initially */
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* Smooth transition */
   }
 
-  .has-submenu:hover .submenu {
-    display: block; /* Show submenu on hover */
+  .has-submenu:hover .submenu,
+  .has-submenu:focus-within .submenu { 
+    display: block; /* Show submenu when parent is hovered/focused */
+    visibility: visible; /* Make visible */
+    opacity: 1; /* Fully visible */
+    transition: opacity 0.3s ease, visibility 0s linear 0s; /* Apply transition */
   }
-
+  
   .submenu li {
     margin: 5px 0;
   }
+  
+  
 }
 

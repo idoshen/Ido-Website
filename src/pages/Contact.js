@@ -23,6 +23,10 @@ function Contact() {
             <span>Mail</span>
             <img src={MailIcon} alt="Mail" />
           </a>
+          <a href="tel:+972544998258" className='contact-button animated-button'>
+            <span>Phone</span>
+            <img src={PhoneIcon} alt="Phone" />
+          </a>
           <a href="https://www.linkedin.com/in/idoshen/" className='contact-button animated-button'>
             <span>LinkedIn</span>
             <img src={LinkedInIcon} alt="LinkedIn" />
@@ -30,10 +34,6 @@ function Contact() {
           <a href="https://www.github.com/idoshen" className='contact-button animated-button'>
             <span>Github</span>
             <img src={GithubIcon} alt="Github" />
-          </a>
-          <a href="tel:+972544998258" className='contact-button animated-button'>
-            <span>Phone</span>
-            <img src={PhoneIcon} alt="Phone" />
           </a>
         </div>
       </div>
