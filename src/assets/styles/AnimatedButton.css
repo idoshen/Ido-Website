@@ -43,7 +43,7 @@
     transition: transform 0.1s;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
     .animated-button > img {
         width: 35px;
         height: 35px;

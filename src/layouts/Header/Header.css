@@ -171,7 +171,7 @@
 
 /* TODO: fix dead zone between the header and submenu */
 
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
   .menu-container {
     display: block;
     position: absolute;

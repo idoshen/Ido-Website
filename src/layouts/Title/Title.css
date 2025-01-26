@@ -26,12 +26,12 @@ section {
     margin: 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
     .skills-title-text {
-        font-size: 20vw;
+        font-size: 10vw;
     }
     
     .projects-title-text {
-        font-size: 20vw;
+        font-size: 10vw;
     }
 }

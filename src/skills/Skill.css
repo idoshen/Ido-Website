@@ -76,7 +76,7 @@
 } 
   
 /* Mobile Styles */
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
   .skill {
     padding: 110px 50px 30px 50px;
   }

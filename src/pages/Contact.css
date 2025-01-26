@@ -86,7 +86,7 @@
 }
 
 /* Mobile Styles */
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
     .contact {
         padding: 10%;
         display: block;
@@ -103,11 +103,7 @@
     }
 
     .contact-buttons {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 30px;
-        padding: 0%;
+        gap: 10px;
     }
 
     .contact-button {
