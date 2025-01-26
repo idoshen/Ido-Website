@@ -51,20 +51,19 @@
     gap: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-    max-width: 400px;
+    max-width: 450px;
 }
 
 .project-tag {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.11vw;
     color: #e80000;
     border: 2px solid #e80000;
     width: 100%;
     height: 30px;
     border-radius: 20px;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .project-p {
@@ -104,6 +103,22 @@
     max-width: 500px;
     height: auto;
     border-radius: 8px; 
+}
+
+.git-project-link > img {
+    width: 200px;
+    height: 50px;
+
+}
+
+.git-project-link > img:hover {
+    transform: scale(1.1);
+    transition: transform 0.1s;
+}
+
+.git-project-link > img:active {
+    transform: scale(0.9);
+    transition: transform 0.1s;
 }
 
 /* Tablet Styles */

@@ -12,7 +12,7 @@ function HTTPServer(){
         <div className='project-text animate'>
           <h1 className='project-title'>The Server</h1>
           <div className='project-tags'>
-          <span className='project-tag'>Computer Network</span>
+            <span className='project-tag'>Computer Networks</span>
             <span className='project-tag'>Java</span>
             <span className='project-tag'>Multithreading</span>
             <span className='project-tag'>Concurrency</span>

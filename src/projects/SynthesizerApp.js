@@ -1,13 +1,7 @@
 import React from 'react';
 import './Project.css';
 import SynthesizerImage from '../assets/images/Synthesizer.png';
-
-// DSP (Digital Signal Processing)
-// Java GUI Development
-// Multithreading
-// Audio Effects Design
-// Key Event Handling
-// System Integration
+import GitProjectIcon from '../assets/GitProject.svg';
 
 function SynthesizerApp(){
 
@@ -28,6 +22,7 @@ function SynthesizerApp(){
           <p className='project-p'><span className='bold-text'>Real-Time DSP Sound Synthesis:</span> Generates and processes audio in real-time using advanced oscillators and waveforms.<br></br>
                                    <span className='bold-text'>Comprehensive Audio Effects:</span> Includes ADSR, Saturation, Delay, Tremolo, Vibrato, and more for detailed sound manipulation.<br></br>
                                    <span className='bold-text'>Interactive DSP Control:</span> Allows users to control frequency, modulation, and effects through intuitive input and real-time adjustments.</p>
+          <div className='project-link'><a className="git-project-link" href='https://www.github.com/idoshen' target="_blank" rel="noopener noreferrer"><img src={GitProjectIcon} alt="Git-Project" /></a></div>
         </div>
       </div>  
     </section>

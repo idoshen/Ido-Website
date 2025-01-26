@@ -38,6 +38,11 @@
     opacity: 0;
 }
 
+.animated-button:active {
+    transform: scale(0.9);
+    transition: transform 0.1s;
+}
+
 @media (max-width: 1000px) {
     .animated-button > img {
         width: 35px;
@@ -49,7 +54,7 @@
     }
 
     .animated-button > span {
-        display: none; /* Hide text for mobile */
+        display: none;
     }
 
     .animated-button:hover > img,
@@ -57,10 +62,5 @@
         top: 50%;
         opacity: 1;
         transition: none;
-    }
-
-    .animated-button:active {
-        transform: scale(0.9);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     }
 }

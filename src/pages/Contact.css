@@ -75,6 +75,16 @@
     font-weight: bold;
 }
 
+.contact-button:hover {
+    transform: scale(1.05);
+    transition: transform 0.1s;
+}
+
+.contact-button:active {
+    transform: scale(0.9);
+    transition: transform 0.1s;
+}
+
 /* Mobile Styles */
 @media (max-width: 1000px) {
     .contact {

@@ -201,8 +201,6 @@
     color: #22242a;
   }
 
-  /* TODO: fix light sub-menu of burger bug */
-
   /* Burger Menu Styling */
   .burger-menu {
     display: flex;
@@ -249,7 +247,6 @@
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
-    /* color: white; */
   }
 
   /* Navigation Menu */
@@ -281,23 +278,21 @@
     list-style: none;
     padding: 0;
     margin: 10px 0 0 20px;
-    visibility: hidden; /* Start hidden */
-    opacity: 0; /* Fully transparent initially */
-    transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* Smooth transition */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
   }
 
   .has-submenu:hover .submenu,
   .has-submenu:focus-within .submenu { 
-    display: block; /* Show submenu when parent is hovered/focused */
-    visibility: visible; /* Make visible */
-    opacity: 1; /* Fully visible */
-    transition: opacity 0.3s ease, visibility 0s linear 0s; /* Apply transition */
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease, visibility 0s linear 0s;
   }
   
   .submenu li {
     margin: 5px 0;
   }
-  
-  
 }
 
