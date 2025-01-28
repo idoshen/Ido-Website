@@ -10,7 +10,7 @@
   right: 40px;
   z-index: 1000;
   background-color: #22242a; /* dark background */
-  color: white; /* light text color */
+  color: #F3F3F3; /* light text color */
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 10px;
@@ -274,19 +274,14 @@
     transform: none;
   }
 
-  .submenu {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0 20px;
-    visibility: hidden;
+  .submenu.close {
+    display: none;
     opacity: 0;
     transition: opacity 0.3s ease, visibility 0s linear 0.3s;
   }
 
-  .has-submenu:hover .submenu,
-  .has-submenu:focus-within .submenu { 
+  .submenu.open { 
     display: block;
-    visibility: visible;
     opacity: 1;
     transition: opacity 0.3s ease, visibility 0s linear 0s;
   }

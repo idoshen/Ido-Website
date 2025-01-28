@@ -1,6 +1,7 @@
 import React from 'react';
 import './Project.css';
 import WordelImg from '../assets/images/Wordle.png';
+import GitProjectIcon from '../assets/GitProject.svg';
 
 function Wordle(){
   return (
@@ -17,9 +18,10 @@ function Wordle(){
             <span className='project-tag'>React</span>
             <span className='project-tag'>Python</span>
           </div>
-          <p className='project-p'><span className='bold-text'>Entropy Calculation:</span> Assesses word information gain for optimized guesses.<br></br>
-                                  <span className='bold-text'>Dynamic Word Filtering:</span> Continuously updates possibilities based on game feedback.<br></br>
-                                  <span className='bold-text'>Efficient Guessing Process:</span> Refines solutions in real-time, minimizing the number of guesses.</p>
+          <p className='project-p'><strong>Entropy Calculation:</strong> Assesses word information gain for optimized guesses.<br></br>
+                                  <strong>Dynamic Word Filtering:</strong> Continuously updates possibilities based on game feedback.<br></br>
+                                  <strong>Efficient Guessing Process:</strong> Refines solutions in real-time, minimizing the number of guesses.</p>
+                                  <div className='project-link'><a className="git-project-link" href='https://www.github.com/idoshen' target="_blank" rel="noopener noreferrer"><img src={GitProjectIcon} alt="Git-Project" /></a></div>
         </div>
       </div>
     </section>

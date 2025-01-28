@@ -12,11 +12,11 @@ function ProgrammingLang() {
                 <div className="text">
                     <h2 className="skill-title">Programming Languages</h2>
                     <p className="skill-p">
-                    In my studies, I developed projects using Java, Python, C, and C#. I
-                    created a synthesizer in Java, worked on machine learning projects in
-                    Python (GitHub Repository), and completed two in-depth courses: one
-                    focusing on C programming and another on Object-Oriented Programming
-                    in C#.
+                    Built, learned, and explored programming.
+                    I developed a synthesizer in <span className="red-text"><strong>Java</strong></span>, worked on machine learning projects in
+                    <span className="red-text"><strong> Python</strong></span> (GitHub Repository), and completed two in-depth courses: one
+                    focusing on <span className="red-text"><strong>C</strong></span> programming and another on Object-Oriented Programming
+                    in <span className="red-text"><strong>C#</strong></span>.
                     </p>
                 </div>
                 <div className="icons-4">

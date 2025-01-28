@@ -8,7 +8,9 @@ function About(){
         <h1 className='about-title'>About <span className="red-text">Me</span></h1>
       </div>
       <div className="about-bottom-left">
-        <p className='about-p'>Passionate about <span className="bold-text">software development</span>, with experience in machine learning, computer vision, and data science.<br></br><br></br> Holds a B.Sc. in Computer Science, with strong expertise in data structures, algorithms, and system programming. Eager to gain practical experience through internships to advance in software developmentand and contribute to the field.</p>
+        <p className='about-p'>Hi there! I’m a <strong>Software Developer</strong> with a <strong>B.Sc.</strong> in <strong>Computer Science</strong>, passionate about machine learning, algorithms, and software development.
+        I enjoy exploring new technologies, learning new concepts, and creating innovative solutions. <br></br><br></br>
+        I’m always looking for my next challenge - whether it’s diving deeper into cutting-edge AI technology, tackling complex algorithms, or contributing to impactful projects in tech.</p>
       </div>
       <div className="about-top-right">
         <h1 className='education-title'>Education</h1>

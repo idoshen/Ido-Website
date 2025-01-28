@@ -1,11 +1,10 @@
 .project {
-    padding: 220px 200px 100px 200px;
+    padding: 12% 200px 5% 200px;
     color: #22242a;
 }
 
 .project-container {
     display: flex;
-    gap: 50px;
 }
 
 .left-to-right {
@@ -23,6 +22,7 @@
     overflow: hidden;
     opacity: 0;
     z-index: 1;
+    padding: 3%;
 }
 
 .project-text.is-visible {

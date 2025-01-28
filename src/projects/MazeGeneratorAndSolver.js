@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Project.css';
 import MazeGift from '../assets/images/BFS.gif';
+import GitProjectIcon from '../assets/GitProject.svg';
 
 function MazeGeneratorAndSolver(){
 
@@ -51,11 +52,11 @@ function MazeGeneratorAndSolver(){
             <span className='project-tag'>Java</span>
             <span className='project-tag'>Problem Solving</span>
           </div>
-          <p className='project-p'><span className='bold-text'>Dynamic Maze Generation:</span> Implements an algorithm to randomly generate solvable mazes of varying difficulty levels.<br></br>
-                                <span className='bold-text'>Efficient Maze Solving:</span> Features an optimized solver that uses algorithms like DFS or BFS to find the shortest path through the maze.<br></br>
-                                <span className='bold-text'>Interactive Visualization:</span> Provides a real-time visual representation of the maze creation and solving process, allowing users to explore and modify the maze.</p>
+          <p className='project-p'><strong>Dynamic Maze Generation:</strong> Implements an algorithm to randomly generate solvable mazes of varying difficulty levels.<br></br>
+                                <strong>Efficient Maze Solving:</strong> Features an optimized solver that uses algorithms like DFS or BFS to find the shortest path through the maze.<br></br>
+                                <strong>Interactive Visualization:</strong> Provides a real-time visual representation of the maze creation and solving process, allowing users to explore and modify the maze.</p>
+                                <div className='project-link'><a className="git-project-link" href='https://www.github.com/idoshen' target="_blank" rel="noopener noreferrer"><img src={GitProjectIcon} alt="Git-Project" /></a></div>
         </div>
-        
       </div>
     </section>
   );

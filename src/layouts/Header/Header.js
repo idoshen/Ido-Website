@@ -7,8 +7,12 @@ const Header = ({ isLight }) => {
 
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isSkillsOpen, setIsSkillsOpen] = useState(false);
+    const [isProjectsOpen, setIsProjectsOpen] = useState(false);
     const menuRef = useRef(null);
     const burgerButtonRef = useRef(null);
+    const skillsButtonRef = useRef(null);
+    const projectsButtonRef = useRef(null);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -27,8 +31,14 @@ const Header = ({ isLight }) => {
         };
     }, []);
 
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
+    const toggleMenu = (menuType) => {
+        if (menuType === 'menu') {
+            setIsMenuOpen((prevState) => !prevState);
+        } else if (menuType === 'skills') {
+            setIsSkillsOpen((prevState) => !prevState);
+        } else if (menuType === 'projects') {
+            setIsProjectsOpen((prevState) => !prevState);
+        }
     };
 
     const handleClickOutside = (event) => {
@@ -38,7 +48,20 @@ const Header = ({ isLight }) => {
             burgerButtonRef.current &&
             !burgerButtonRef.current.contains(event.target)
         ) {
+            console.log("Closing menu because click was outside menu or burger button.");
             setIsMenuOpen(false);
+        } else if (
+            skillsButtonRef.current &&
+            !skillsButtonRef.current.contains(event.target)
+        ) {
+            console.log("Closing skills section because click was outside skills button.");
+            setIsSkillsOpen(false);
+        } else if (
+            projectsButtonRef.current &&
+            !projectsButtonRef.current.contains(event.target)
+        ) {
+            console.log("Closing projects section because click was outside projects button.");
+            setIsProjectsOpen(false);
         }
     };
 
@@ -49,7 +72,6 @@ const Header = ({ isLight }) => {
             document.removeEventListener('mousedown', handleClickOutside);
         }
 
-        // Cleanup listener on component unmount
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
         };
@@ -61,7 +83,7 @@ const Header = ({ isLight }) => {
                 <a className='header-name' href="#home">IDO SHENBACH</a>
             </div>
             <div className="burger-menu" >
-                <img src={isLight ? BurgerDarkIcon : BurgerLightIcon } alt="Menu" className='burger-icon' ref={burgerButtonRef} onClick={toggleMenu}/>
+                <img src={isLight ? BurgerDarkIcon : BurgerLightIcon } alt="Menu" className='burger-icon' ref={burgerButtonRef} onClick={() => toggleMenu('menu')}/>
             </div>
             <div ref={menuRef} className={`menu-container ${isMenuOpen ? "open" : "close"} ${isLight ? 'light-header' : ''}`}>
                 <nav className={`navigation ${isLight ? 'light-header' : ''}`}>
@@ -69,8 +91,8 @@ const Header = ({ isLight }) => {
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li className="has-submenu">
-                        <a href="#skills">Skills</a>
-                        <ul className="submenu ">
+                        <a href="#skills" ref={skillsButtonRef} onClick={() => toggleMenu('skills')}>Skills</a>
+                        <ul className={`submenu ${isSkillsOpen ? "open" : "close"}`}>
                             <li><a href="#prog-lang">Programming Languages</a></li>
                             <li><a href="#plat-frame">Platforms & Frameworks</a></li>
                             <li><a href="#web">Web Development & Tools</a></li>
@@ -78,8 +100,8 @@ const Header = ({ isLight }) => {
                         </ul>
                         </li>
                         <li className="has-submenu">
-                        <a href="#projects">Projects</a>
-                        <ul className="submenu">
+                        <a href="#projects" ref={projectsButtonRef} onClick={() => toggleMenu('projects')}>Projects</a>
+                        <ul className={`submenu ${isProjectsOpen ? "open" : "close"}`} ref={projectsButtonRef}>
                             <li><a href="#SynthesizerApp">Synthesizer App</a></li>
                             <li><a href="#MazeGeneratorAndSolver">Maze Generator And Solver</a></li>
                             <li><a href="#Wordle">Wordle Solver</a></li>

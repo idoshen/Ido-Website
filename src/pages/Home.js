@@ -2,10 +2,10 @@ import React from 'react';
 import './Home.css';
 import '../assets/styles/AnimatedButton.css';
 import IdoShenbachCV from '../assets/files/Ido Shenbach CV.pdf';
-import ProjectIcon from '../assets/icons/Project.svg';
-import CVIcon from '../assets/icons/CV.svg';
-import LinkedInIcon from '../assets/icons/Linkedin_Dark.svg';
-import GithubIcon from '../assets/icons/Github_Dark.svg';
+import ProjectIcon from '../assets/icons/Project_Light.svg';
+import CVIcon from '../assets/icons/CV_Light.svg';
+import LinkedInIcon from '../assets/icons/LinkedIn_Light.svg';
+import GithubIcon from '../assets/icons/Github_Light.svg';
 import IdoImg from '../assets/images/ido.jpg';
 
 function Home() {
@@ -16,7 +16,7 @@ function Home() {
           <div className='home-name-and-job'>
             <h1 className="home-name">Ido Shenbach</h1>
             <h2 className="home-job">Software Developer</h2>
-            <p className="home-p">Coding like it's my cardio.</p>
+            <p className="home-p">Got a challenge? Let’s solve it.</p>
           </div>
           <div className="home-buttons">
             <a href={IdoShenbachCV} className="home-button animated-button" download="Ido Shenbach CV.pdf">

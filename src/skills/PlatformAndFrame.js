@@ -11,9 +11,9 @@ function PlatformAndFrame() {
                 <div className="text">
                     <h2 className="skill-title">Platforms & Frameworks</h2>
                     <p className="skill-p">
-                    I manage all my projects using Git, ensuring efficient version control
-                    and collaboration. I have experience working with .NET for application
-                    development and gained familiarity with Linux during my system
+                    I manage all my projects using <span className="red-text"><strong>Git</strong></span>, ensuring efficient version control
+                    and collaboration. I have experience working with <span className="red-text"><strong>.NET</strong></span> for application
+                    development and gained familiarity with <span className="red-text"><strong>Linux</strong></span> during my system
                     programming in C course.
                     </p>
                 </div>
