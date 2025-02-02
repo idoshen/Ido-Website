@@ -5,7 +5,7 @@ import BurgerDarkIcon from '../../assets/Burger_Dark.svg';
 
 const Header = ({ isLight }) => {
 
-    const [isScrolled, setIsScrolled] = useState(false);
+    const [isScrolledDown, setIsScrolledDown] = useState(window.scrollY !== 0);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSkillsOpen, setIsSkillsOpen] = useState(false);
     const [isProjectsOpen, setIsProjectsOpen] = useState(false);
@@ -16,16 +16,14 @@ const Header = ({ isLight }) => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY === 0) {
-                setIsScrolled(false);
-            } else {
-                setIsScrolled(true);
-            }
+            setIsScrolledDown(window.scrollY !== 0);
+            console.log('window.scrollY:', window.scrollY);
         };
 
+        //TODO: Fix the issue with the isScrolledDown on mount it happens because of .is-visible animation
+        // console.log('window.scrollY (on mount):', window.scrollY);
         window.addEventListener('scroll', handleScroll);
 
-        // Cleanup the event listener when the component unmounts
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
@@ -65,7 +63,7 @@ const Header = ({ isLight }) => {
     }, [isMenuOpen]);
 
     return (
-        <header className={`header animate ${isScrolled ? 'scrolled-down' : 'scrolled-to-top'} ${isLight ? 'light-header' : ''}`}>
+        <header className={`header animate ${isScrolledDown ? 'scrolled-down' : 'scrolled-to-top'} ${isLight ? 'light-header' : ''}`}>
             <div className='header-name-container'>  
                 <a className='header-name' href="#home">IDO SHENBACH</a>
             </div>

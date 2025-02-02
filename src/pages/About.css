@@ -67,7 +67,6 @@
     .about {
         padding: 110px 50px 30px 50px;
         display: block;
-
     }
 
     .about.is-visible {
@@ -93,6 +92,7 @@
     .about-p {
         font-size: 20px;
         margin-top: 20px;
+        padding: 0%;
     }
 }
 
