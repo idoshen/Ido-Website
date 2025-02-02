@@ -48,20 +48,7 @@ const Header = ({ isLight }) => {
             burgerButtonRef.current &&
             !burgerButtonRef.current.contains(event.target)
         ) {
-            console.log("Closing menu because click was outside menu or burger button.");
             setIsMenuOpen(false);
-        } else if (
-            skillsButtonRef.current &&
-            !skillsButtonRef.current.contains(event.target)
-        ) {
-            console.log("Closing skills section because click was outside skills button.");
-            setIsSkillsOpen(false);
-        } else if (
-            projectsButtonRef.current &&
-            !projectsButtonRef.current.contains(event.target)
-        ) {
-            console.log("Closing projects section because click was outside projects button.");
-            setIsProjectsOpen(false);
         }
     };
 

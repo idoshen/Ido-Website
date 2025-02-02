@@ -269,9 +269,13 @@
     transition: color 0.3s ease;
   }
 
-  .navigation ul li a:hover {
-    color: none;
+  .navigation ul li a:hover,  .navigation.light-header .has-submenu ul li a:hover, .header-name:hover{
+    color: inherit;
     transform: none;
+  }
+
+  .navigation ul li a:active,  .navigation.light-header .has-submenu ul li a:active, .header-name:active {
+    color: #e80000;
   }
 
   .submenu.close {
