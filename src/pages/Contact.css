@@ -81,6 +81,7 @@
 }
 
 .contact-button:active {
+    background-color: hsl(0, 100%, 30%);
     transform: scale(0.9);
     transition: transform 0.1s;
 }
@@ -109,6 +110,12 @@
     .contact-button {
         background-color: #22242a;
         border: #e80000 2px solid;
+    }
+
+    .contact-button:active {
+        background-color: #000000;
+        transform: scale(0.9);
+        transition: transform 0.1s;
     }
 
     .contact-rights {

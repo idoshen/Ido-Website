@@ -126,7 +126,7 @@
 /* Tablet Styles */
 @media (max-width: 1025px) {
     .project {
-        padding: 110px 50px 30px 50px;
+        padding: 110px 50px 0px 50px;
     }
 
     .project-container {

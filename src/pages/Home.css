@@ -81,9 +81,14 @@
 }
 
 .home-button:hover {
+  border: none;
   transform: scale(1.05);
   background-color: #e80000;
   transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+
+.home-button:active {
+  background-color: hsl(0, 100%, 30%);
 }
 
 /* Tablet Styles */
@@ -132,5 +137,6 @@
   .home-button {
     font-size: 15px;
     background-color: #e80000;
+    border: none;
   }
 }
