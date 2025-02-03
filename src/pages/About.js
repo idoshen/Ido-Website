@@ -15,8 +15,8 @@ function About(){
       <div className="about-top-right">
       </div>
       <div className="about-bottom-right">
-        <p>Some of my elevant electives include Machine Learning, Deep Learning and Image Understanding, Image Processing and Analysis, Natural Language Processing, Reinforcement Learning, Statistics and Data Analysis, and Computer Graphics.<br></br><br></br>
-          These courses offer valuable insights and skills for various areas in artificial intelligence, data science, and computer vision.</p>
+        <p>Some of my relevant electives include Machine Learning, Deep Learning and Image Understanding, Image Processing and Analysis, Natural Language Processing, Reinforcement Learning, Statistics and Data Analysis, and Computer Graphics.<br></br><br></br>
+          These courses offer valuable skills for various areas in artificial intelligence, data science, and computer vision.</p>
       </div>
     </section>
   );

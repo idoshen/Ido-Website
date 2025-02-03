@@ -8,6 +8,10 @@
   padding-top: 100px;
 }
 
+#ml {
+  padding-bottom: 128px;
+}
+
 .skill-container {
     display: flex;
     gap: 100px;
