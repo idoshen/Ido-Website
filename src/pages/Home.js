@@ -1,7 +1,6 @@
 import React from 'react';
 import './Home.css';
 import '../assets/styles/AnimatedButton.css';
-import IdoShenbachCV from '../assets/files/Ido Shenbach CV.pdf';
 import ProjectIcon from '../assets/icons/Project_Light.svg';
 import CVIcon from '../assets/icons/CV_Light.svg';
 import LinkedInIcon from '../assets/icons/LinkedIn_Light.svg';
@@ -19,7 +18,7 @@ function Home() {
             <p className="home-p">Got a challenge? Let’s solve it.</p>
           </div>
           <div className="home-buttons">
-            <a href={IdoShenbachCV} className="home-button animated-button" download="Ido Shenbach CV.pdf">
+            <a href="./Ido Shenbach CV.pdf" className="home-button animated-button" download="Ido_Shenbach_CV.pdf">
               <span>Download Resume</span>
               <img src={CVIcon} alt="CV" />
             </a>
