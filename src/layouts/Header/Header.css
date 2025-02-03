@@ -224,15 +224,6 @@
     height: 16px;
   }
 
-  .burger-menu span {
-    display: block;
-    width: 20px;
-    height: 2px;
-    margin: 4px 0;
-    background-color: white;
-    border-radius: 1px;
-  }
-
   /* Header Styling */
   .header {
     grid-template-columns: auto 1fr;
