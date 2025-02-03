@@ -13,6 +13,7 @@ import MazeGeneratorAndSolver from './projects/MazeGeneratorAndSolver';
 import Wordle from './projects/Wordle';
 import HTTPServer from './projects/HTTP-Server';
 import Contact from './pages/Contact';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [isLight, setIsLight] = useState(true);
