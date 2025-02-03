@@ -20,7 +20,7 @@ function App() {
   const [isLight, setIsLight] = useState(true);
 
   useEffect(() => {
-    const visibleThreshold = 0.8; // Threshold for "is-visible"
+    const visibleThreshold = 0.5; // Threshold for "is-visible"
     const hiddenThreshold = 0.5; // Threshold for "is-hidden"
   
     const observer = new IntersectionObserver(
@@ -95,12 +95,12 @@ function App() {
         <main className="main-content">
           <Home />
           <About />
-          <Title id="skills" title="Skills" className="skills-title" />
+          {/* <Title id="skills" title="Skills" className="skills-title" /> */}
           <ProgrammingLang />
           <PlatformAndFrame />
           <Web />
           <MachineLearning />
-          <Title id="projects" title="Projects" className="projects-title"/>
+          {/* <Title id="projects" title="Projects" className="projects-title"/> */}
           <SynthesizerApp />
           <MazeGeneratorAndSolver />
           <Wordle />

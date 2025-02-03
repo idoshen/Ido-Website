@@ -3,7 +3,7 @@ import './About.css';
 
 function About(){
   return (
-    <section id="about" className="about animate">
+    <section id="about" className=" about animate">
       <div className="about-top-left">
         <h1 className='about-title'>About <span className="red-text">Me</span></h1>
       </div>
@@ -13,22 +13,10 @@ function About(){
         I’m always looking for my next challenge - whether it’s diving deeper into cutting-edge AI technology, tackling complex algorithms, or contributing to impactful projects in tech.</p>
       </div>
       <div className="about-top-right">
-        <h1 className='education-title'>Education</h1>
       </div>
       <div className="about-bottom-right">
-        <p><strong>B.SC COMPUTER SCIENCE</strong><br></br>
-        Reichman University</p>
-        <p><strong>GPA – 87.41</strong></p>
-        <p><strong>Relevant Electives:</strong></p>
-          <ul>
-            <li>Machine Learning</li>
-            <li>Deep Learning and Image Understanding</li>
-            <li>Image Processing and Analysis</li>
-            <li>Natural Language Processing</li>
-            <li>Reinforcement Learning</li>
-            <li>Statistics and Data Analysis</li>
-            <li>Computer Graphics</li>
-          </ul>
+        <p>Some of my elevant electives include Machine Learning, Deep Learning and Image Understanding, Image Processing and Analysis, Natural Language Processing, Reinforcement Learning, Statistics and Data Analysis, and Computer Graphics.<br></br><br></br>
+          These courses offer valuable insights and skills for various areas in artificial intelligence, data science, and computer vision.</p>
       </div>
     </section>
   );

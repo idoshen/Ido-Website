@@ -1,8 +1,11 @@
 .skill {
-    padding: 170px 200px 100px 200px;
+    padding: 60px 200px 60px 200px;
     background-color: #22242a;
     color: #F3F3F3;
-    
+}
+
+#prog-lang {
+  padding-top: 100px;
 }
 
 .skill-container {
@@ -51,7 +54,8 @@
 
 .skill-p {
     font-size: 1.2vw;
-    margin-top: 20px;
+    margin-top: 55px;
+    line-height: 27.5px;
 }
 
 .icons-container{
@@ -70,7 +74,7 @@
 /* Mobile Styles */
 @media (max-width: 1025px) {
   .skill {
-    padding: 110px 50px 30px 50px;
+    padding: 60px 50px 60px 50px;
   }
 
   .skill-container {

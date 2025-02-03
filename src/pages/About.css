@@ -4,7 +4,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 1fr;
-    padding: 170px 10% 20px 200px;
+    padding: 100px 200px 400px 200px;
+    align-items: start;
 }
 
 .about-top-left {
@@ -41,14 +42,10 @@
     padding-right: 10%;
 }
 
-.about-bottom-right > ul > li {
-    margin-left: 20px;
-}
-
 /* Tablet Styles */
 @media (max-width: 1025px) {
     .about {
-        padding: 110px 50px 30px 50px;
+        padding: 10px 50px 30px 50px;
         display: block;
     }
 
