@@ -133,6 +133,10 @@
   width: 280px;
 }
 
+.has-submenu ul li a{
+  padding: 10px;
+}
+
 .submenu::before {
   content: '';
   display: block;
