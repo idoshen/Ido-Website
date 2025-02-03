@@ -1,5 +1,5 @@
 .project {
-    padding: 12% 200px 5% 200px;
+    padding: 170px 200px 100px 200px;
     color: #22242a;
 }
 
@@ -26,12 +26,7 @@
 }
 
 .project-text.is-visible {
-    animation: fade-in 1s ease-in-out forwards, slide-up 1s ease-in-out forwards;
-    animation-delay: 0.3s;
-}
-
-.project-text.is-hidden {
-    animation: fade-out 1s ease-in-out forwards;
+    animation-delay: 0.5s;
 }
 
 .project-title {
@@ -141,13 +136,8 @@
         /* overflow: hidden; */
         width: 100%;
         padding: 0%;
-        opacity: 0;
         z-index: 1;
-    }
-
-    .project-text.is-visible {
-        animation: fade-in 0.5s ease-in-out forwards;
-        animation-delay: none;
+        opacity: 1;
     }
 
     .project-media-container-left-to-right,
@@ -155,30 +145,25 @@
         /* REMOVE: For debugging purposes */
         /* border: red 4px solid; */
         width: 50%;
+        
     }
 
     .project-media-container-left-to-right.is-visible,
     .project-media-container-right-to-left.is-visible {
         /* REMOVE: For debugging purposes */
         /* border: red 4px solid; */
-        animation: fade-in 0.5s ease-in-out forwards;
+        animation: none;
     }
 
     .project-media-container-left-to-right.is-hidden,
     .project-media-container-right-to-left.is-hidden {
         /* REMOVE: For debugging purposes */
         /* border: red 4px solid; */
-        animation: fade-out 0.5s ease-in-out forwards;
+        animation: none;
     }
 
     .project-title {
         font-size: 30px;
-    }
-    
-    .blinking-cursor:after {
-        content: '|';
-        color: #000;
-        animation: blink 1s step-start infinite;
     }
     
     .project-p {

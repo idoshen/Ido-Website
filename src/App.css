@@ -16,7 +16,6 @@
 }
 
 /* TODO: make sure consistent text and background colors */
-
 body {
   font-family: 'sofia-pro', sans-serif;
   color: #37383C;
@@ -42,11 +41,27 @@ a {
   color: #e80000;
 }
 
+.is-visible {
+  animation: fade-in 0.5s forwards, slide-up 0.5s forwards;
+}
+
+.is-hidden {
+  animation: fade-out 0.5s forwards;
+}
+
 /* Tablet Styles */
 @media (max-width: 1025px) {
   .main-content {
     display: grid;
     grid-template-rows: repeat(2, auto) 1fr repeat(4, auto) 1fr repeat(5, auto);
+  }
+
+  .is-visible {
+    animation: none;
+  }
+  
+  .is-hidden {
+    animation: none;
   }
 }
 

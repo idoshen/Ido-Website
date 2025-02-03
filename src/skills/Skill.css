@@ -1,13 +1,13 @@
 .skill {
+    padding: 170px 200px 100px 200px;
     background-color: #22242a;
     color: #F3F3F3;
-    padding: 170px 200px 100px 200px;
+    
 }
 
 .skill-container {
     display: flex;
     gap: 100px;
-    opacity: 0;
 }
 
 .left-to-right {
@@ -67,14 +67,6 @@
     width: 50%;
 }
   
-.skill-container.is-visible {
-    animation: fade-in 1s forwards, slide-up 1s forwards;
-}
-
-.skill-container.is-hidden {
-    animation: fade-out 1s forwards;
-} 
-  
 /* Mobile Styles */
 @media (max-width: 1025px) {
   .skill {
@@ -117,11 +109,4 @@
     height: 100px;
   }
 
-  .skill-container.is-visible {
-      animation: fade-in 0.3s forwards;
-  }
-  
-  .skill-container.is-hidden {
-      animation: fade-out 0.3s forwards;
-  } 
 }

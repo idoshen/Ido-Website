@@ -5,15 +5,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 1fr;
     padding: 170px 10% 20px 200px;
-    opacity: 0;
-}
-
-.about.is-visible {
-    animation: fade-in 1s forwards, slide-up 1s forwards;
-}
-
-.about.is-hidden {
-    animation: fade-out 1s forwards;
 }
 
 .about-top-left {
@@ -30,14 +21,6 @@
 
 .about-bottom-right {
     grid-area: 2 / 2 / 3 / 3;
-}
-
-.about.is-visible {
-    animation: fade-in 1s ease-in-out forwards, slide-up 1s ease-in-out forwards;
-}
-
-.about.is-hidden {
-    animation: fade-out 1s ease-in-out forwards;
 }
 
 .about-title {
@@ -67,14 +50,6 @@
     .about {
         padding: 110px 50px 30px 50px;
         display: block;
-    }
-
-    .about.is-visible {
-        animation: fade-in 0.3s forwards;
-    }
-    
-    .about.is-hidden {
-        animation: fade-out 0.3s forwards;
     }
 
     .about-top-right {

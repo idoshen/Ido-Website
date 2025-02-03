@@ -8,16 +8,7 @@
 }
 
 .contact-container{
-    opacity: 0;
     color: #f8f8f2;
-}
-
-.contact-container.is-visible, .contact-rights.is-visible {
-    animation: fade-in 1s forwards, slide-up 1s forwards;
-}
-
-.contact-container.is-hidden, .contact-rights.is-hidden {
-    animation: fade-out 1s forwards;
 }
 
 .contact-title {
@@ -122,12 +113,4 @@
         margin-top: 20px;
         font-size: 10px;
     }
-
-    .contact-container.is-visible, .contact-rights.is-visible {
-        animation: fade-in 0.3s forwards;
-    }
-    
-    .contact-container.is-hidden, .contact-rights.is-hidden {
-        animation: fade-out 0.3s forwards;
-    }    
 }
