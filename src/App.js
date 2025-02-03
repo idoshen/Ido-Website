@@ -14,6 +14,7 @@ import Wordle from './projects/Wordle';
 import HTTPServer from './projects/HTTP-Server';
 import Contact from './pages/Contact';
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   const [isLight, setIsLight] = useState(true);
@@ -106,6 +107,7 @@ function App() {
           <HTTPServer />
           <Contact />
         </main>
+        <SpeedInsights />
         <Analytics />
       </div>
   );
