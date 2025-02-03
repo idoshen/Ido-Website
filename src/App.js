@@ -106,6 +106,7 @@ function App() {
           <HTTPServer />
           <Contact />
         </main>
+        <Analytics />
       </div>
   );
 }
