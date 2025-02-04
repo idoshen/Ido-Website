@@ -172,7 +172,7 @@
   .first-submenu-container {
     display: block;
     position: absolute;
-    width: 150px;
+    width: min-content;
     top: 80px;
     right: 0;
     background-color: #22242a;

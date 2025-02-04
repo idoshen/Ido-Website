@@ -20,8 +20,6 @@ const Header = ({ isLight }) => {
             console.log('window.scrollY:', window.scrollY);
         };
 
-        //TODO: Fix the issue with the isScrolledDown on mount it happens because of .is-visible animation
-        // console.log('window.scrollY (on mount):', window.scrollY);
         window.addEventListener('scroll', handleScroll);
 
         return () => {
@@ -34,8 +32,14 @@ const Header = ({ isLight }) => {
             setIsMenuOpen((prevState) => !prevState);
         } else if (menuType === 'skills') {
             setIsSkillsOpen((prevState) => !prevState);
+            if (!isSkillsOpen) {
+                setIsProjectsOpen(false);
+            }
         } else if (menuType === 'projects') {
             setIsProjectsOpen((prevState) => !prevState);
+            if (!isProjectsOpen) {
+                setIsSkillsOpen(false);
+            }
         }
     };
 
@@ -47,8 +51,11 @@ const Header = ({ isLight }) => {
             !burgerButtonRef.current.contains(event.target)
         ) {
             setIsMenuOpen(false);
+            setIsSkillsOpen(false);
+            setIsProjectsOpen(false);
         }
     };
+
 
     useEffect(() => {
         if (isMenuOpen) {
