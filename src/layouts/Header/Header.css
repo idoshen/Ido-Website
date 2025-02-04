@@ -122,7 +122,7 @@
   padding: 10px;
 }
 
-.second-submenu-container ::before {
+.second-submenu-container::before {
   content: '';
   display: block;
   position: absolute;
