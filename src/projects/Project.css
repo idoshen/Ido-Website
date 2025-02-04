@@ -38,6 +38,7 @@
 }
 
 .project-title {
+    display: block;
     font-size: clamp(24px, 5vw, 96px);
 }
 
@@ -69,7 +70,7 @@
     font-size: 15px;
 }
 
-.project-p {
+.project-span {
     font-size: clamp(17px, 1.2vw, 24px);
     padding-bottom: 10px ;
 }
@@ -145,6 +146,10 @@
     transition: transform 0.1s;
 }
 
+.project-bullet {
+    padding-bottom: 10px;
+}
+
 /* Tablet Styles */
 @media (max-width: 1025px) {
     .project {
@@ -176,6 +181,11 @@
         padding: 20px 0 0 0;
     }
 
+    .project-title {
+        display: inline;
+        font-size: 25px;
+    }
+
     .project-media-container-left-to-right,
     .project-media-container-right-to-left {
         /* REMOVE: For debugging purposes */
@@ -184,18 +194,8 @@
         transform: translateX(0);
     }
 
-    .project-media-container-left-to-right.is-visible,
-    .project-media-container-right-to-left.is-visible {
-        /* REMOVE: For debugging purposes */
-        /* border: red 4px solid; */
-        animation: none;
-    }
-
     .project-media-container-left-to-right.is-hidden,
     .project-media-container-right-to-left.is-hidden {
-        /* REMOVE: For debugging purposes */
-        /* border: red 4px solid; */
-        animation: none;
         transform: translateX(0);
     }
 }

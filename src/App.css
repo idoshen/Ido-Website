@@ -55,6 +55,11 @@ a {
 
 /* Tablet Styles */
 @media (max-width: 1025px) {
+  section {
+    /* border: #e80000 2px solid; */
+    scroll-margin-top: 82px;
+  }
+
   .animate {
     transition: none;
     opacity: 1;
