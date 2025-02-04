@@ -70,14 +70,14 @@ const Header = ({ isLight }) => {
             <div className="burger-menu" >
                 <img src={isLight ? BurgerDarkIcon : BurgerLightIcon } alt="Menu" className='burger-icon' ref={burgerButtonRef} onClick={() => toggleMenu('menu')}/>
             </div>
-            <div ref={menuRef} className={`menu-container ${isMenuOpen ? "open" : "close"} ${isLight ? 'light-header' : ''}`}>
+            <div ref={menuRef} className={`first-submenu-container ${isMenuOpen ? "open" : "close"} ${isLight ? 'light-header' : ''}`}>
                 <nav className={`navigation ${isLight ? 'light-header' : ''}`}>
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li className="has-submenu">
                         <a href="#skills" ref={skillsButtonRef} onClick={() => toggleMenu('skills')}>Skills</a>
-                        <ul className={`submenu ${isSkillsOpen ? "open" : "close"}`}>
+                        <ul className={`second-submenu-container ${isSkillsOpen ? "open" : "close"}`}>
                             <li><a href="#prog-lang">Programming Languages</a></li>
                             <li><a href="#plat-frame">Platforms & Frameworks</a></li>
                             <li><a href="#web">Web Development & Tools</a></li>
@@ -86,7 +86,7 @@ const Header = ({ isLight }) => {
                         </li>
                         <li className="has-submenu">
                         <a href="#projects" ref={projectsButtonRef} onClick={() => toggleMenu('projects')}>Projects</a>
-                        <ul className={`submenu ${isProjectsOpen ? "open" : "close"}`} ref={projectsButtonRef}>
+                        <ul className={`second-submenu-container  ${isProjectsOpen ? "open" : "close"}`} ref={projectsButtonRef}>
                             <li><a href="#SynthesizerApp">Synthesizer App</a></li>
                             <li><a href="#MazeGeneratorAndSolver">Maze Generator And Solver</a></li>
                             <li><a href="#Wordle">Wordle Solver</a></li>
