@@ -9,6 +9,7 @@
 
 .left-to-right {
     flex-direction: row; /* Text | Icons */
+
 }
 
 .right-to-left{
@@ -19,14 +20,21 @@
     /* REMOVE: For debugging purposes */
     /* border: red 4px solid; */
     width: 50%;
-    opacity: 0;
+    /* opacity: 0; */
     z-index: 1;
-    padding: 0% 3%;
-    
 }
 
-.project-text.is-visible {
-    animation-delay: 0.5s;
+.right-to-left > .project-text {
+    padding-right: 50px;
+}
+
+.left-to-right > .project-text {
+    padding-left: 50px;
+}
+
+.project-text.animate {
+    will-change: opacity, transform;
+    transition: opacity 0.5s ease-in-out 0.5s, transform 0.5s ease-in-out 0.5s;
 }
 
 .project-title {
@@ -77,27 +85,46 @@
     z-index: 2;
 }
 
-.project-media-container-left-to-right.is-visible{
-    animation: slide-in-left-to-right  1s ease-in-out forwards;
+.project-media-container-left-to-right {
+    will-change: transform, opacity;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    transform: translateX(-100%);
 }
 
-.project-media-container-left-to-right.is-hidden{
-    animation: slide-out-left-to-right  1s ease-in-out forwards;
+.project-media-container-left-to-right.is-visible {
+    transform: translateX(0);
 }
 
-.project-media-container-right-to-left.is-visible{
-    animation: slide-in-right-to-left  1s ease-in-out forwards;
+.project-media-container-left-to-right.is-hidden {
+    transform: translateX(-100%);
+    pointer-events: none; /* Prevents interactions when hidden */
 }
 
-.project-media-container-right-to-left.is-hidden{
-    animation: slide-out-right-to-left  1s ease-in-out forwards;
+.project-media-container-right-to-left {
+    will-change: transform, opacity;
+    transition: transform 1s ease-in-out;
+    transform: translateX(100%);
 }
+
+.project-media-container-right-to-left.is-visible {
+    transform: translateX(0);
+}
+
+.project-media-container-right-to-left.is-hidden {
+    transform: translateX(100%);
+    pointer-events: none;
+}
+
 
 .project-media {
     width: 100%;
-    max-width: 500px;
     height: auto;
-    border-radius: 8px; 
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 8px;
+
+    /* keep original aspect ratio */
+    object-fit: contain;
 }
 
 .git-project-link > img {
@@ -138,6 +165,10 @@
         padding: 0%;
         z-index: 1;
         opacity: 1;
+    }
+
+    .right-to-left > .project-text, .left-to-right > .project-text {
+        padding: 0px 10px;
     }
 
     .project-media-container-left-to-right,
