@@ -11,7 +11,7 @@ function MachineLearning() {
             <div className="skill-container right-to-left animate">
                 <div className='text'>
                     <h2 className='skill-title'>Machine Learning</h2>
-                    <p className='skill-p'>I have explored various areas of machine learning through courses and self-initiated projects. My experience includes Natural Language Processing, Reinforcement Learning, Deep Learning, Computer Vision, as well as statistics and data analysis.</p>
+                    <p className='skill-p'>I have explored various areas of machine learning through courses and self-initiated projects. My experience includes fine-tuning a Sentence-BERT model for semantic similarity in Hebrew (<span className="red-text"><strong>NLP</strong></span>), developing a Double Deep Q-Network agent for Sokoban game (<span className="red-text"><strong>RL</strong></span>), implementing an image captioning model with ResNet152 and LSTM (<span className="red-text"><strong>Computer Vision</strong></span>), and conducting statistical analysis for myocardial infarction detection (<span className="red-text"><strong>Data Analysis</strong></span>).</p>
                 </div>
                 <div className='icons-4'>
                     <div><img src={NumpyIcon} alt='Numpy' className='big-icon'></img></div>

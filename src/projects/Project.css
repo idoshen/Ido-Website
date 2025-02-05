@@ -69,7 +69,7 @@
     width: 100%;
     height: 30px;
     border-radius: 20px;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .project-span {
@@ -155,7 +155,7 @@
 /* Tablet Styles */
 @media (max-width: 1025px) {
     .project {
-        padding: 50px 50px 20px 50px;
+        padding: 20px 50px 20px 50px;
     }
 
     #HTTPServer {
@@ -177,6 +177,10 @@
         opacity: 1;
     }
 
+    .project-tag {
+        font-size: 12px;
+    }
+
     .right-to-left > .project-text, .left-to-right > .project-text {
         text-align: left;
         width: 100%;
@@ -192,7 +196,7 @@
     .project-media-container-right-to-left {
         /* REMOVE: For debugging purposes */
         /* border: red 4px solid; */
-        width: 50%;
+        width: 100%;
         transform: translateX(0);
     }
 
