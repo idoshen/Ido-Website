@@ -36,7 +36,7 @@ function MazeGeneratorAndSolver(){
     return () => clearInterval(interval);
   }, [currentCharIndex, currentTextIndex, isDeleting]);
 
-
+  // TODO: Work on Maze media (gif)
   return (
     <section id="MazeGeneratorAndSolver" className="project">
       <div className="project-container right-to-left">

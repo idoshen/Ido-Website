@@ -16,7 +16,7 @@ function Contact() {
           <h2>Contact Me</h2>
         </div>
         <div className='contact-p'>
-          <p>Feel free to reach out if you have any questions, collaboration ideas, or just want to say hello!</p>
+          <p>I'm always open to connecting - whether it's for questions, collaboration, or just exchanging ideas. Feel free to reach out, and let's build something great together.</p>
         </div>
         <div className="contact-buttons">
           <a href="mailto:idoshen1@gmail.com" className='contact-button animated-button'>
@@ -27,11 +27,11 @@ function Contact() {
             <span>Phone</span>
             <img src={PhoneIcon} alt="Phone" />
           </a>
-          <a href="https://www.linkedin.com/in/idoshen/" className='contact-button animated-button'>
+          <a href="https://www.linkedin.com/in/idoshen/" className='contact-button animated-button' target="_blank" rel="noopener noreferrer">
             <span>LinkedIn</span>
             <img src={LinkedInIcon} alt="LinkedIn" />
           </a>
-          <a href="https://www.github.com/idoshen" className='contact-button animated-button'>
+          <a href="https://www.github.com/idoshen" className='contact-button animated-button' target="_blank" rel="noopener noreferrer">
             <span>Github</span>
             <img src={GithubIcon} alt="Github" />
           </a>
