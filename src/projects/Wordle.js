@@ -1,6 +1,6 @@
 import React from 'react';
 import './Project.css';
-import WordelImg from '../assets/images/Wordle.png';
+import WordelImg from '../assets/images/Wordle.gif';
 import GitProjectIcon from '../assets/GitProject.svg';
 
 function Wordle(){

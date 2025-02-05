@@ -1,6 +1,6 @@
 import React from 'react';
 import './Project.css';
-import ServerImg from '../assets/images/server_image.png';
+import ServerImg from '../assets/images/Server.png';
 import GitProjectIcon from '../assets/GitProject.svg';
 
 function HTTPServer(){
