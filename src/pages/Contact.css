@@ -40,11 +40,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: auto; /* Ensures the copyright stays at the bottom */
-    padding: 10px 0;
+    margin-top: 50px; /* Ensures the copyright stays at the bottom */
     font-size: 15px;
     color: #f8f8f2;
-    opacity: 0;
 }
 
 .contact-rights-text {
