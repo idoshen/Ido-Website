@@ -3,6 +3,8 @@ import './Project.css';
 import ServerImg from '../assets/images/Server.png';
 import GitProjectIcon from '../assets/GitProject.svg';
 
+
+// TODO: nake code lines in the media visible (in the Server.png file)
 function HTTPServer(){
   return (
     <section id="HTTPServer" className="project">
