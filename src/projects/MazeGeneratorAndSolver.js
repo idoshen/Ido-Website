@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Project.css';
-import MazeGift from '../assets/images/BFS.gif';
+import MazeGift from '../assets/images/Maze.gif';
 import GitProjectIcon from '../assets/GitProject.svg';
 
 function MazeGeneratorAndSolver(){
