@@ -10,7 +10,7 @@ function ProgrammingLang() {
         <section id="prog-lang" className="skill">
             <div className="skill-container left-to-right animate">
                 <div className="text">
-                    <h2 className="skill-title">Programming Languages</h2>
+                    <h1 className="skill-title">Programming Languages</h1>
                     <p className="skill-p">
                     Built, learned, and explored programming.
                     I developed a synthesizer in <span className="red-text"><strong>Java</strong></span>, worked on machine learning projects in

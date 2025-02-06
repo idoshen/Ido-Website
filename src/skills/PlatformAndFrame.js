@@ -9,7 +9,7 @@ function PlatformAndFrame() {
         <section id="plat-frame" className="skill">
             <div className="skill-container right-to-left animate">
                 <div className="text">
-                    <h2 className="skill-title">Platforms & Frameworks</h2>
+                    <h1 className="skill-title">Platforms & Frameworks</h1>
                     <p className="skill-p">
                     I manage all my projects using <span className="red-text"><strong>Git</strong></span>, ensuring efficient version control
                     and collaboration. I have experience working with <span className="red-text"><strong>.NET</strong></span> for application

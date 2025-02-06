@@ -23,7 +23,7 @@ function Home() {
               <img src={CVIcon} alt="CV" />
             </a>
 
-            <a className="home-button animated-button" href='#projects'>
+            <a className="home-button animated-button" href='#SynthesizerApp'>
               <span>View Projects</span>
               <img src={ProjectIcon} alt="Project" />
             </a>

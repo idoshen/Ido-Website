@@ -11,7 +11,7 @@ function Web() {
         <section id="web" className="skill">
             <div className="skill-container left-to-right animate">
                 <div className='text'>
-                    <h2 className='skill-title'>Web Development & Tools</h2>
+                    <h1 className='skill-title'>Web Development & Tools</h1>
                     <p className='skill-p'>Gained hands-on experience in web development through projects like building this portfolio website and creating a Wordle Solver game. These projects allowed me to strengthen my skills in <span className="red-text"><strong>React</strong></span> and <span className="red-text"><strong>JavaScript</strong></span> for dynamic user interfaces, as well as <span className="red-text"><strong>HTML5</strong></span> and <span className="red-text"><strong>CSS3</strong></span> for structuring and styling web pages.</p>
                 </div>
                 <div className='icons-4'>

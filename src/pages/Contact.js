@@ -13,7 +13,7 @@ function Contact() {
     <section id="contact" className="contact">
       <div className='contact-container animate'>
         <div className='contact-title'>
-          <h2>Contact Me</h2>
+          <h1>Contact Me</h1>
         </div>
         <div className='contact-p'>
           <p>I'm always open to connecting - whether it's for questions, collaboration, or just exchanging ideas. Feel free to reach out, and let's build something great together.</p>

@@ -12,14 +12,12 @@
 }
 
 .contact-title {
-    font-size: 62px;
     display: flex;
     justify-content: center;
     align-items: end;
 }
 
 .contact-p {
-    font-size: 17px;
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 0% 15%;

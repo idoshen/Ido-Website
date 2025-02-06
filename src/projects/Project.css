@@ -39,7 +39,6 @@
 
 .project-title {
     display: block;
-    font-size: clamp(24px, 5vw, 96px);
 }
 
 .blinking-cursor:after {
@@ -74,7 +73,6 @@
 }
 
 .project-span {
-    font-size: clamp(17px, 1.2vw, 24px);
     padding-bottom: 10px ;
 }
 

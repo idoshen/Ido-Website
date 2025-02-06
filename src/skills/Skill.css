@@ -52,14 +52,8 @@
     height: 200px;
 }
 
-.skill-title {
-    font-size: 5vw;
-}
-
 .skill-p {
-    font-size: 1.2vw;
     margin-top: 55px;
-    line-height: 27.5px;
 }
 
 .icons-container{
