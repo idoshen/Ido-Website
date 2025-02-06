@@ -7,9 +7,20 @@
     display: flex;
 }
 
+.project-tags-and-link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.git-project-link-img {
+    width: 50px;
+}
+
 .left-to-right {
     flex-direction: row; /* Text | Icons */
-
 }
 
 .right-to-left{
@@ -55,6 +66,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     max-width: 450px;
+    width: 100%;
 }
 
 /* TODO: fix the problem with the font size in smaller screens */
@@ -134,7 +146,7 @@
     height: auto;
 
     /* TODO: Understand what to do with GitHub logo link */
-    display: none; 
+    /* display: none;  */
 }
 
 .git-project-link > img:hover {
@@ -174,6 +186,14 @@
         width: 100%;
         z-index: 1;
         opacity: 1;
+    }
+
+    .project-tags-and-link-container {
+        gap: 10px;
+    }
+
+    .project-tags {
+        gap: 5px;
     }
 
     .project-tag {

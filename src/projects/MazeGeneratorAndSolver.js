@@ -45,18 +45,20 @@ function MazeGeneratorAndSolver(){
         </div>
         <div className='project-text animate'>
           <h1 className='project-title'>The Maze <span className='project-title blinking-cursor red-text'>{currentText}</span></h1>
-          <div className='project-tags'>
-            <span className='project-tag'>Algorithms</span>
-            <span className='project-tag'>Data Structures</span>
-            <span className='project-tag'>Java</span>
-            <span className='project-tag'>Problem Solving</span>
+          <div className='project-tags-and-link-container'>
+            <div className='project-tags'>
+              <span className='project-tag'>Algorithms</span>
+              <span className='project-tag'>Data Structures</span>
+              <span className='project-tag'>Java</span>
+              <span className='project-tag'>Problem Solving</span>
+            </div>
+            <div><a href='https://www.github.com/idoshen/Maze-Generator-And-Solver' target="_blank" rel="noopener noreferrer"><img src={GitProjectIcon} alt="Git-Project"  className="git-project-link-img"/></a></div>
           </div>
           <span className='project-span'>
             <p className='project-bullet'><strong>Dynamic Maze Generation:</strong> Implements an algorithm to randomly generate solvable mazes of varying difficulty levels.</p>
             <p className='project-bullet'><strong>Efficient Maze Solving:</strong> Features an optimized solver that uses algorithms like DFS or BFS to find the shortest path through the maze.</p>
             <p className='project-bullet'><strong>Interactive Visualization:</strong> Provides a real-time visual representation of the maze creation and solving process, allowing users to explore and modify the maze.</p>
           </span>
-          <div className='project-link'><a className="git-project-link" href='https://www.github.com/idoshen' target="_blank" rel="noopener noreferrer"><img src={GitProjectIcon} alt="Git-Project" /></a></div>
         </div>
       </div>
     </section>

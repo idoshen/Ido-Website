@@ -81,6 +81,19 @@ h2 {
     transform: translateY(0);
     pointer-events: none;
   }
+
+  p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  h1 {
+    font-size: 30px
+  }
+  
+  h2 {
+    font-size: 15px;
+  }
 }
 
 /* Animations and trnsitions */

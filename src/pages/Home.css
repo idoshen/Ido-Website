@@ -74,22 +74,12 @@
   background-color: hsl(0, 100%, 30%);
 }
 
-/* Tablet Styles */
-@media (max-width: 1025px) {
-  .home-image-container {
-    display: none;
-    flex: 0;
-  }
-
-  .home-name-and-buttons {
-    flex: none;
-  }
-
+@media (max-width:1025px) {
   .home {
     display: flex;
-    padding: 130px 50px 30px 50px;
-    justify-content: center;
-    align-items: center;
+    padding: 130px 100px 30px 100px;
+    justify-content: start;
+    gap: 40px;
   }
 
   .home-name {
@@ -112,5 +102,23 @@
     font-size: 15px;
     background-color: #e80000;
     border: none;
+  }
+}
+
+/* Tablet Styles */
+@media (max-width: 650px) {
+  .home-image-container {
+    display: none;
+    flex: 0;
+  }
+
+  .home-name-and-buttons {
+    flex: none;
+  }
+
+  .home {
+    display: flex;
+    padding: 130px 50px 30px 50px;
+    justify-content: center;
   }
 }
