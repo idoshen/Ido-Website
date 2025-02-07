@@ -169,11 +169,12 @@
 }
 
 @media (max-width: 1025px) {
+
   .first-submenu-container {
     display: block;
     position: absolute;
     width: min-content;
-    top: 80px;
+    top: 50px;
     right: 0;
     background-color: #22242a;
     border-radius: 20px;
@@ -203,7 +204,8 @@
   /* Header Styling */
   .header {
     grid-template-columns: auto 1fr;
-    padding: 20px;
+    padding: 10px 20px;
+
     top: 40px;
     left: 20px;
     right: 20px;

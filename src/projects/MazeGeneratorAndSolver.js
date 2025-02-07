@@ -52,7 +52,7 @@ function MazeGeneratorAndSolver(){
               <span className='project-tag'>Java</span>
               <span className='project-tag'>Problem Solving</span>
             </div>
-            <div><a href='https://www.github.com/idoshen/Maze-Generator-And-Solver' target="_blank" rel="noopener noreferrer"><img src={GitProjectIcon} alt="Git-Project"  className="git-project-link-img"/></a></div>
+            <div><a href='https://www.github.com/idoshen/Maze-Generator-And-Solver' target="_blank" rel="noopener noreferrer"><img src={GitProjectIcon} alt="git-Project"  className="git-project-link-img"/></a></div>
           </div>
           <span className='project-span'>
             <p className='project-bullet'><strong>Dynamic Maze Generation:</strong> Implements an algorithm to randomly generate solvable mazes of varying difficulty levels.</p>

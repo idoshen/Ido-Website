@@ -39,8 +39,6 @@ function Home() {
             </a>
           </div>
         </div>
-      
-        
         <div className="home-image-container">
           <img src={IdoImg} alt="Ido Shenbach" className='home-image'></img>
         </div>

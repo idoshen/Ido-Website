@@ -1,7 +1,7 @@
 .about {
     display: flex;
     flex-direction: column;
-    padding: 70px 200px 400px 200px;
+    padding: 70px 200px 200px 200px;
     align-items: start;
 }
 
@@ -24,7 +24,6 @@
 
 .about-bottom-right {
     font-size: 20px;
-    padding-right: 10%;
 }
 
 /* Tablet Styles */

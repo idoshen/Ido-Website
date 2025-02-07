@@ -1,6 +1,8 @@
 .home {
   padding: 150px 200px 0px 200px;
   display: flex;
+  justify-content: space-between;
+  gap: 100px;
 }
 
 .home-name {
@@ -20,22 +22,22 @@
 .home-name-and-buttons{ 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  flex: 2;
+  justify-content: flex-start;
 }
-
+/* 
 .home-name-and-job {
   margin-right: 150px;
-}
+} */
 
 .home-image-container { 
   display: flex;
-  justify-content: end;
-  flex: 1;
+  justify-content: flex-end;
+  height: 100%;
 }
 
 .home-image {
   width: 100%;
+  object-fit: contain;
 }
 
 .home-buttons {
@@ -77,9 +79,7 @@
 @media (max-width:1025px) {
   .home {
     display: flex;
-    padding: 130px 100px 30px 100px;
-    justify-content: start;
-    gap: 40px;
+    padding: 100px 100px 30px 100px;
   }
 
   .home-name {
@@ -118,7 +118,7 @@
 
   .home {
     display: flex;
-    padding: 130px 50px 30px 50px;
+    padding: 100px 50px 30px 50px;
     justify-content: center;
   }
 }
