@@ -1,47 +1,33 @@
 import React from 'react';
 import './Home.css';
-import '../assets/styles/AnimatedButton.css';
+// import '../assets/styles/AnimatedButton.css';
 import ProjectIcon from '../assets/icons/Project_Light.svg';
 import CVIcon from '../assets/icons/CV_Light.svg';
-import LinkedInIcon from '../assets/icons/LinkedIn_Light.svg';
-import GithubIcon from '../assets/icons/Github_Light.svg';
-import IdoImg from '../assets/images/ido.jpg';
+// import IdoImg from '../assets/images/ido.jpg';
 
 function Home() {
 
   return (
     <section id="home" className="home animate">
-        <div className="home-name-and-buttons">
-          <div className='home-name-and-job'>
-            <h1 className="home-name">Ido Shenbach</h1>
-            <h2 className="home-job">Software Developer</h2>
-            <p className="home-p">Got a challenge? Let’s solve it.</p>
-          </div>
+        <div className="home-p-and-buttons">
+          <p className='home-p'>Hi there! I’m a <strong>Software Developer</strong> with a <strong>B.Sc.</strong> in <strong>Computer Science</strong>, passionate about machine learning, algorithms, and software development.
+          I enjoy exploring new technologies, learning new concepts, and creating innovative solutions. <br></br><br></br>
+          I’m always looking for my next challenge - whether it’s diving deeper into cutting-edge AI technology, tackling complex algorithms, or contributing to impactful projects in tech.</p>
           <div className="home-buttons">
-            <a href="./Ido Shenbach CV.pdf" className="home-button animated-button" download="Ido_Shenbach_CV.pdf">
-              <span>Download Resume</span>
-              <img src={CVIcon} alt="CV" />
+            <a href="./Ido Shenbach CV.pdf" className="home-button" download="Ido_Shenbach_CV.pdf">
+              Download CV
             </a>
-
-            <a className="home-button animated-button" href='#SynthesizerApp'>
-              <span>View Projects</span>
-              <img src={ProjectIcon} alt="Project" />
-            </a>
-
-            <a className="home-button animated-button"  href='https://www.linkedin.com/in/idoshen/' target="_blank" rel="noopener noreferrer">
-            <span>LinkedIn</span>
-              <img src={LinkedInIcon} alt="LinkedIn" />
-            </a>
-
-            <a className="home-button animated-button" href='https://www.github.com/idoshen' target="_blank" rel="noopener noreferrer">
-              <span>GitHub</span>
-              <img src={GithubIcon} alt="Github" />
+            <a className="home-button" href='#contact'>
+              Contact
             </a>
           </div>
         </div>
-        <div className="home-image-container">
-          <img src={IdoImg} alt="Ido Shenbach" className='home-image'></img>
+        <div>
+          
         </div>
+        {/* <div className="home-image-container">
+          <img src={IdoImg} alt="Ido Shenbach" className='home-image'></img>
+        </div> */}
     </section>
   );
 }

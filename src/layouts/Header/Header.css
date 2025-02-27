@@ -3,45 +3,37 @@
   src: url('../../assets/fonts/Alkia.ttf') format('opentype');
 }
 
-.header {
-  position: fixed;
-  top: 50px;
-  left: 40px;
-  right: 40px;
-  z-index: 1000;
-  background-color: #22242a; /* dark background */
-  color: #F3F3F3; /* light text color */
+header {
+  position: relative;
   display: grid;
-  grid-template-columns: 50% 50%;
-  padding: 10px;
-  border-radius: 20px;
-  box-shadow: 0 6px 16px 2px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-  opacity: 0;
-  transform: translateY(-100%);
-}
-
-.header.light-header {
-  background-color: rgb(249, 249, 249); /* light background */
-  color: #22242a; /* dark text color */
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  color: #22242a; /* light text color */
+  margin: 40px 60px;
+  /* border: #e80000 2px solid; */
 }
 
 .header-name-container {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  padding-top: 2px;
+  justify-self: start;
+  font-family: 'silkscreen', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30.72px;
 }
 
-.header-name {
-  font-family: 'alkia', sans-serif;
-  padding-left: 30px;
-  transition: transform 0.3s ease, color 0.3s ease;
+.header-job-container {
+  justify-self: center;
+  color: #5a6072;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.6px;
 }
 
-.header-name:hover {
-  color: #e80000;
-  transform: translateY(-5px);
+.header-navigation-container {
+  justify-self: end;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16.6px;
 }
 
 .header-name:active {
@@ -51,18 +43,7 @@
 
 .first-submenu-container {
   display: flex;
-  justify-content: right;
   align-items: center;
-}
-
-.scrolled-to-top {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.scrolled-down {
-    opacity: 0.8;
-    transform: translateY(-20px);
 }
 
 /* Style the main navigation */
@@ -71,6 +52,7 @@
   margin: 0;
   padding: 0;
   display: flex;
+  gap: 20px;
 }
 
 .navigation ul li {
@@ -79,81 +61,19 @@
 
 .navigation ul li a {
   display: block;
-  color: white;
   text-align: center;
-  padding: 15px 30px 15px 10px;
   text-decoration: none;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.navigation.light-header ul li a{
-  color: #22242a; /* dark text color */
 }
 
 .navigation ul li a:hover {
-  color: #e80000;
-  transform: translateY(-5px);
+  color: #6f6f6f;
 }
 
 .navigation ul li a:active {
-  transform: translateY(0px);
-  transition: transform 0.1s ease;
+
 }
 
-/* Style the submenu navigation */
-.has-submenu ul {
-  visibility: hidden;
-  display: block;
-  position: absolute;
-  background-color: #22242a;
-  top: 140%;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 10px;
-  border-radius: 20px;
-  box-shadow: 0 6px 16px 2px rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  opacity: 0;
-  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
-  width: 280px;
-}
 
-.has-submenu ul li a{
-  padding: 10px;
-}
-
-.second-submenu-container::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 25%;
-  width: 40%;
-  background: transparent;
-  z-index: 1000; /* Ensure it stays above */
-  place-items: center;
-}
-
-.second-submenu-container  li a {
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-}
-
-.navigation.light-header .has-submenu ul {
-  background-color: rgb(249, 249, 249); /* light background */
-  color: #22242a; /* dark text color */
-}
-
-.navigation.light-header .has-submenu ul li a {
-  color: #22242a; /* dark text color */
-}
-
-.navigation.light-header .has-submenu ul li a:hover {
-  color: #e80000;
-}
 
 .has-submenu:hover ul {
   visibility: visible;
@@ -169,112 +89,6 @@
 }
 
 @media (max-width: 1025px) {
-
-  .first-submenu-container {
-    display: block;
-    position: absolute;
-    width: min-content;
-    top: 50px;
-    right: 0;
-    background-color: #22242a;
-    border-radius: 20px;
-    z-index: 1000;
-    padding: 10px;
-  }
-
-  .first-submenu-container.light-header {
-    background-color: rgb(249, 249, 249); /* light background */
-    color: #22242a;
-  }
-
-  /* Burger Menu Styling */
-  .burger-menu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    cursor: pointer;
-    z-index: 1100;
-  }
-
-  .burger-menu img {
-    width: 16px;
-    height: 16px;
-  }
-
-  /* Header Styling */
-  .header {
-    grid-template-columns: auto 1fr;
-    padding: 10px 20px;
-
-    top: 40px;
-    left: 20px;
-    right: 20px;
-  }
-
-  .header.light-header {
-    background-color: rgb(249, 249, 249); /* light background */
-    color: #22242a; /* dark text color */
-  }
-
-  .header-name-container {
-    justify-content: flex-start;
-  }
-
-  .header-name {
-    padding-left: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-  }
-
-  /* Navigation Menu */
-  .navigation ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .navigation ul li {
-    margin: 10px 0;
-  }
-
-  .navigation ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    transition: color 0.3s ease;
-  }
-
-  .navigation ul li a:hover,  .navigation.light-header .has-submenu ul li a:hover, .header-name:hover{
-    color: inherit;
-    transform: none;
-  }
-
-  .navigation ul li a:active,  .navigation.light-header .has-submenu ul li a:active, .header-name:active {
-    color: #e80000;
-  }
-
-  .second-submenu-container{
-    position: absolute !important;
-    top: -10px !important;
-    left: -130px !important;
-    width: inherit !important;
-
-  }
-
-  .open {
-    opacity: 1 !important;
-    visibility: visible !important;
-    transition: opacity 0.3s ease, visibility 0.3s linear 0s !important;
-  }
-
-  .close {
-    opacity: 0 !important;
-    visibility: hidden !important;
-    transition: opacity 0.3s ease, visibility 0.3s linear 0s !important;
-  }
+  
 }
 
