@@ -1,17 +1,15 @@
-@font-face {
-  font-family: 'alkia';
-  src: url('../../assets/fonts/Alkia.ttf') format('opentype');
-}
-
 header {
-  position: relative;
+  position: sticky;
+  top: 0px;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  color: #22242a; /* light text color */
-  margin: 40px 60px;
+  padding: 40px 60px;
+  z-index: 1000;
   /* border: #e80000 2px solid; */
+  backdrop-filter: blur(40px);
 }
+
 
 .header-name-container {
   justify-self: start;
@@ -34,16 +32,6 @@ header {
   font-weight: 400;
   font-size: 15px;
   line-height: 16.6px;
-}
-
-.header-name:active {
-  transform: translateY(0px);
-  transition: transform 0.1s ease;
-}
-
-.first-submenu-container {
-  display: flex;
-  align-items: center;
 }
 
 /* Style the main navigation */
@@ -70,22 +58,7 @@ header {
 }
 
 .navigation ul li a:active {
-
-}
-
-
-
-.has-submenu:hover ul {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.3s ease, visibility 0s linear 0s; 
-}
-
-.burger-menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: none;
+  color: #6f6f6f;
 }
 
 @media (max-width: 1025px) {

@@ -7,7 +7,7 @@ import Web from './Web';
 
 function Skills() {
     return (
-        <section className="skills">
+        <section id='skills' className="skills">
             <ProgrammingLang />
             <Web />
             <PlatformAndFrame />

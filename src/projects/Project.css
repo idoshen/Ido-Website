@@ -1,5 +1,4 @@
 .project {
-    color: #22242a;
     /* margin-bottom: 100px; */
 }
 
@@ -8,25 +7,14 @@
     /* gap: 5%; */
 }
 
-.project:has(> .left-to-right) {
+/* .project:has(> .left-to-right) {
     margin-left: 0px;
 }
 
 .project:has(> .right-to-left) {
     margin-right: 0px;
-}
+} */
 
-.project-tags-and-link-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    gap: 20px;
-}
-
-.git-project-link-img {
-    width: 50px;
-}
 
 .left-to-right {
     flex-direction: row; /* Text | Icons */
@@ -45,29 +33,23 @@
     justify-content: center;
 }
 
-.right-to-left > .project-text {
-    padding-right: 50px;
+.left-to-right > .project-text{
+    padding-left: 60px;
 }
 
-.left-to-right > .project-text {
-    padding-left: 50px;
-}
-
-.project-title {
-    display: block;
+.right-to-left > .project-text{
+    padding-right: 60px;
 }
 
 .blinking-cursor:after {
     content: '_';
-    color: #000;
     animation: blink 1s step-start infinite;
 }
 
 .project-tags {
     display: flex;
     gap: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 10px 0px;
 }
 
 /* TODO: fix the problem with the font size in smaller screens */
@@ -84,7 +66,7 @@
 }
 
 .project-span {
-    padding-bottom: 10px ;
+    margin-bottom: 10px ;
 }
 
 .project-media-container-left-to-right, .project-media-container-right-to-left {
@@ -95,20 +77,10 @@
     width: 50%;
     opacity: 1;
     background-color: #e4e4e6;
-
 }
 
-.project-media-container-left-to-right {
+.project-media-container-left-to-right, .project-media-container-right-to-left {
     justify-content: center;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-
-
-.project-media-container-right-to-left {
-    justify-content: center;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
 }
 
 .project-media {
@@ -121,24 +93,26 @@
     object-fit: contain;
 }
 
-.git-project-link-img {
-    width: 50px;
-    cursor: pointer;
-}
-
-.git-project-link-img:hover {
-    transform: scale(1.1);
-    transition: transform 0.1s;
-}
-
-.git-project-link-img:active {
-    transform: scale(0.9);
-    transition: transform 0.1s;
-}
-
 .project-bullet {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
+
+.github-link-button {
+    background-color: #5CDB95;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.github-link-button:hover, .github-link-button:active{
+    background-color: hsl(147, 64%, 75%);
+  }
+
+
+.green-text{
+    color: hsl(147, 64%, 45%);
+}
+  
 
 /* Tablet Styles */
 @media (max-width: 1025px) {
@@ -193,11 +167,6 @@
         /* REMOVE: For debugging purposes */
         /* border: red 4px solid; */
         width: 100%;
-        transform: translateX(0);
-    }
-
-    .project-media-container-left-to-right.is-hidden,
-    .project-media-container-right-to-left.is-hidden {
         transform: translateX(0);
     }
 

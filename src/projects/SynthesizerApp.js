@@ -1,7 +1,7 @@
 import React from 'react';
 import './Project.css';
 import SynthesizerImage from '../assets/images/Synthesizer.png';
-import GitProjectIcon from '../assets/GitProject.svg';
+// import GitProjectIcon from '../assets/GitProject.svg';
 
 function SynthesizerApp(){
 
@@ -12,7 +12,7 @@ function SynthesizerApp(){
           <img src={SynthesizerImage} alt='maze' className='project-media'></img>
         </div>
         <div className='project-text'>
-            <h1 className='project-title'>The Synthesizer</h1>
+            <h1 className='project-title'>The Synthesizer_</h1>
             <div className='project-tags-and-link-container'>
               <div className='project-tags'>
               <span className='project-tag'>DSP</span>
@@ -27,7 +27,9 @@ function SynthesizerApp(){
             <p className='project-bullet'><strong>Interactive DSP Control:</strong> Allows users to control frequency, modulation, and effects through intuitive input and real-time adjustments.</p>
           </span>
           <div>
-            <a href='https://www.github.com/idoshen/Synthesizer-App' target="_blank" rel="noopener noreferrer"><img src={GitProjectIcon} alt="Git-Project"  className="git-project-link-img"/></a>
+            <a className='github-link-button' href='https://www.github.com/idoshen/Synthesizer-App' target="_blank" rel="noopener noreferrer">
+            GitHub
+            </a>
           </div>
         </div>
       </div>  

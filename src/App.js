@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import './App.css';
 import Header from './layouts/Header/Header';
 import Home from './pages/Home';
@@ -12,55 +12,12 @@ import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
-  const [isLight, setIsLight] = useState(true);
-
-  useEffect(() => {
-    const header = document.querySelector('header');
-    const sections = document.querySelectorAll('section');
-  
-    const darkBackgroundColor = 'rgb(34, 36, 42)';
-  
-    function updateHeaderColor() {
-      let sectionUnderHeader = null;
-  
-      // Loop through all sections and check if any is directly below the header
-      sections.forEach((section) => {
-        const rect = section.getBoundingClientRect();
-  
-        if (rect.top <= header.offsetHeight && rect.bottom >= header.offsetHeight) {
-          sectionUnderHeader = section;
-        }
-      });
-  
-      // If a section is found, check its background color
-      if (sectionUnderHeader) {
-        const bgColor = window.getComputedStyle(sectionUnderHeader).backgroundColor;
-
-        if (bgColor === darkBackgroundColor) {
-          setIsLight(true);
-        } else if (bgColor !== darkBackgroundColor) {
-          setIsLight(false);
-        }
-      }
-    }
-
-    updateHeaderColor();
-
-    window.addEventListener('scroll', updateHeaderColor);
-  
-    return () => {
-      window.removeEventListener('scroll', updateHeaderColor);
-    };
-  }, []);
-  
-  
 
   return (
       <div className="App">
-        <Header isLight={isLight} />
+        <Header/>
         <main className="main-content">
           <Home />
-          
 
           <SynthesizerApp />
           <MazeGeneratorAndSolver />

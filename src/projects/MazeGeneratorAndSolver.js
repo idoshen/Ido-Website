@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Project.css';
 import MazeGift from '../assets/images/Maze.gif';
-import GitProjectIcon from '../assets/GitProject.svg';
+// import GitProjectIcon from '../assets/GitProject.svg';
 
 function MazeGeneratorAndSolver(){
 
@@ -36,7 +36,6 @@ function MazeGeneratorAndSolver(){
     return () => clearInterval(interval);
   }, [currentCharIndex, currentTextIndex, isDeleting]);
 
-  // TODO: Work on Maze media (gif)
   return (
     <section id="MazeGeneratorAndSolver" className="project">
       <div className="project-container right-to-left">
@@ -44,7 +43,7 @@ function MazeGeneratorAndSolver(){
           <img src={MazeGift} alt='maze' className='project-media'></img>
         </div>
         <div className='project-text'>
-          <h1 className='project-title blinking-cursor '>The Maze {currentText}</h1>
+          <h1 className='project-title blinking-cursor '>The Maze <span className='green-text'>{currentText}</span></h1>
           <div className='project-tags-and-link-container'>
             <div className='project-tags'>
               <span className='project-tag'>Algorithms</span>
@@ -59,7 +58,9 @@ function MazeGeneratorAndSolver(){
             <p className='project-bullet'><strong>Interactive Visualization:</strong> Provides a real-time visual representation of the maze creation and solving process, allowing users to explore and modify the maze.</p>
           </span>
           <div>
-            <a href='https://www.github.com/idoshen/Maze-Generator-And-Solver' target="_blank" rel="noopener noreferrer"><img src={GitProjectIcon} alt="git-Project"  className="git-project-link-img"/></a>
+            <a className='github-link-button' href='https://www.github.com/idoshen/Maze-Generator-And-Solver' target="_blank" rel="noopener noreferrer">
+            GitHub
+            </a>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Project.css';
 import WordelImg from '../assets/images/Wordle.gif';
-import GitProjectIcon from '../assets/GitProject.svg';
+// import GitProjectIcon from '../assets/GitProject.svg';
 
 function Wordle(){
   return (
@@ -11,7 +11,7 @@ function Wordle(){
           <img className='project-media' src={WordelImg} alt='Wordle Solver'></img>
         </div>
         <div className='project-text'>
-          <h1 className='project-title'>The Wordle Solver</h1>
+          <h1 className='project-title'>The Wordle Solver_</h1>
           <div className='project-tags-and-link-container'>
             <div className='project-tags'>
               <span className='project-tag'>Information Theory</span>
@@ -26,7 +26,9 @@ function Wordle(){
             <p className='project-bullet'><strong>Efficient Guessing Process:</strong> Refines solutions in real-time, minimizing the number of guesses.</p>
           </span>
           <div>
-            <a href='https://www.github.com/idoshen/Wordle-Solver' target="_blank" rel="noopener noreferrer"><img src={GitProjectIcon} alt="Git-Project"  className="git-project-link-img"/></a>
+            <a className='github-link-button' href='https://www.github.com/idoshen/Wordle-Solver' target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
           </div>
         </div>
       </div>
