@@ -1,9 +1,23 @@
 .skills {
     display: flex;
     flex-wrap: wrap;
-    margin: 60px 0 0 0;
+    margin: 0;
 }
 
 .skills > div {
     width: 50%;
+}
+
+@media (max-width: 1025px) {
+    .skills {
+        display: block;
+    }
+
+    .skills > div {
+        width: 100%;
+    }
+}
+  
+@media (max-width: 650px) {
+  
 }

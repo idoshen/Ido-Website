@@ -74,32 +74,23 @@
 /* Mobile Styles */
 @media (max-width: 1025px) {
     .contact {
-        padding: 10%;
-        display: block;
+        padding: 20px 0;
     }
 
-    .contact-title {
-        font-size: 35px;
+    .contact-container{
+        width: 100%;
     }
-
     .contact-p{
         margin: 20px 0px;
-        padding: 0% 15px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .contact-buttons {
         gap: 10px;
-    }
-
-    .contact-button {
-        background-color: #22242a;
-        border: #e80000 2px solid;
-    }
-
-    .contact-button:active {
-        background-color: #000000;
-        transform: scale(0.9);
-        transition: transform 0.1s;
     }
 
     .contact-rights {

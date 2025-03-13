@@ -61,7 +61,23 @@ header {
   color: #6f6f6f;
 }
 
-@media (max-width: 1025px) {
-  
+@media (max-width: 900px) {
+  .header-job-container {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  header {
+    padding: 20px 30px;
+  }
+
+  .header-name-container {
+    font-size: 15px;
+  }
+
+  .header-navigation-container {
+    font-size: 10px;
+  }
 }
 

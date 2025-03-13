@@ -1,27 +1,13 @@
-.project {
-    /* margin-bottom: 100px; */
-}
-
 .project-container {
     display: flex;
-    /* gap: 5%; */
 }
-
-/* .project:has(> .left-to-right) {
-    margin-left: 0px;
-}
-
-.project:has(> .right-to-left) {
-    margin-right: 0px;
-} */
-
 
 .left-to-right {
-    flex-direction: row; /* Text | Icons */
+    flex-direction: row;
 }
 
 .right-to-left{
-    flex-direction: row-reverse; /* Icons | Text */
+    flex-direction: row-reverse;
 }
 
 .project-text {
@@ -48,6 +34,7 @@
 
 .project-tags {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin: 10px 0px;
 }
@@ -116,39 +103,18 @@
 
 /* Tablet Styles */
 @media (max-width: 1025px) {
-    .project {
-        padding: 20px 50px 20px 50px;
-    }
 
-    #HTTPServer {
-        padding-bottom: 100px;
+    .project {
+        margin-bottom: 20px;
     }
 
     .project-container {
         display: flex;
-        flex-direction: column; /* Stack text and media vertically */
-        align-items: center;
-    }
-
-    .project-text {
-        /* REMOVE: For debugging purposes */
-        /* border: red 4px solid; */
-        /* overflow: hidden; */
-        width: 100%;
-        z-index: 1;
-        opacity: 1;
-    }
-
-    .project-tags-and-link-container {
-        gap: 10px;
+        flex-direction: column;
     }
 
     .project-tags {
         gap: 5px;
-    }
-
-    .project-tag {
-        /* font-size: 13px; */
     }
 
     .right-to-left > .project-text, .left-to-right > .project-text {
@@ -159,7 +125,6 @@
 
     .project-title {
         display: inline;
-        font-size: 25px;
     }
 
     .project-media-container-left-to-right,
@@ -170,8 +135,7 @@
         transform: translateX(0);
     }
 
-    .git-project-link-img {
-        width: 30px;
-        cursor: pointer;
+    .project-media {
+        width: 200px;
     }
 }
