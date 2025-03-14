@@ -129,6 +129,11 @@
         gap: 5px;
     }
 
+    .project-tag {
+        padding: 5px;
+        font-size: 16px;
+    }
+
     .right-to-left > .project-text, .left-to-right > .project-text {
         text-align: left;
         width: 100%;

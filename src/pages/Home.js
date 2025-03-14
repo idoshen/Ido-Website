@@ -4,7 +4,7 @@ import './Home.css';
 function Home({isDarkMode}) {
 
   return (
-    <section id="home" className="home animate">
+    <section id="about" className="home animate">
         <div className="home-p-and-buttons">
           <p className='home-p'>Hi there! I’m a <strong>Software Developer</strong> with a <strong>B.Sc.</strong> in <strong>Computer Science</strong>, 
             passionate about machine learning, algorithms, and software development.

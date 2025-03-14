@@ -14,7 +14,7 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
             </div>
             <div>
                 <div className='center-container'>
-                <div className='header-job-container'>Software Developer</div>
+                <div className={`header-job-container ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>Software Developer</div>
                 <div className="mode-button">
                     <label className="switch">
                     <input
@@ -25,14 +25,13 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
                         <span className="slider"></span>
                     </label>
                 </div>
-                {/* TODO:: Add dark mode toggle button */}
             </div>  
             </div>
             <div className='header-navigation-container'>
-                <nav className="navigation">
+                <nav className={`navigation ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
                     <ul>
-                        <li><a href="#home">About</a></li>
-                        <li><a href="#SynthesizerApp">Projects</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>

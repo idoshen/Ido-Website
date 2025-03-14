@@ -5,7 +5,7 @@ import SynthesizerImage from '../assets/images/Synthesizer.png';
 function SynthesizerApp({isDarkMode}) {
 
   return (
-    <section id="SynthesizerApp" className="project ">
+    <section id="projects" className="project ">
       <div className="project-container left-to-right">
         <div className='project-media-container-right-to-left'>
           <img src={SynthesizerImage} alt='maze' className='project-media'></img>
