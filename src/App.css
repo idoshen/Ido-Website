@@ -1,7 +1,7 @@
 /* REMOVE: For debugging purposes */
 section {
   /* border: #e80000 2px solid; */
-  scroll-margin-top: 111px;
+  scroll-margin-top: 131px;
   margin: 0px 60px;
 }
 
@@ -15,14 +15,23 @@ section {
 /* TODO: make sure consistent text and background colors */
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #37383C;
-  background-color: #F3F3F3;
   margin: 0;
 }
 
 .App {
   margin: 0;
   padding: 0;
+  background-color: #F3F3F3;
+}
+
+.App.light-mode {
+  background-color: #F3F3F3;
+  color: #22242a;
+}
+
+.App.dark-mode {
+  background-color: #22242a;
+  color: #F3F3F3;
 }
 
 .main-content {

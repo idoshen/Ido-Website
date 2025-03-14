@@ -1,7 +1,11 @@
 import React from 'react';
 import './Header.css';
 
-const Header = () => {
+const Header = ({ isDarkMode, setIsDarkMode }) => {
+    const handleToggleChange = (event) => {
+        setIsDarkMode(event.target.checked);
+        console.log('Dark mode is now:', event.target.checked);
+    };
 
     return (
         <header>
@@ -9,9 +13,20 @@ const Header = () => {
                IDO SHENBACH
             </div>
             <div>
+                <div className='center-container'>
                 <div className='header-job-container'>Software Developer</div>
-                {/* <div className='mode-button'>dark_mode</div> */}
+                <div className="mode-button">
+                    <label className="switch">
+                    <input
+                     type="checkbox"
+                     checked={isDarkMode}
+                     onChange={handleToggleChange}
+                    />
+                        <span className="slider"></span>
+                    </label>
+                </div>
                 {/* TODO:: Add dark mode toggle button */}
+            </div>  
             </div>
             <div className='header-navigation-container'>
                 <nav className="navigation">

@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Project.css';
 import MazeGift from '../assets/images/Maze.gif';
-// import GitProjectIcon from '../assets/GitProject.svg';
 
-function MazeGeneratorAndSolver(){
+function MazeGeneratorAndSolver({isDarkMode}) {
 
   const [currentText, setCurrentText] = useState('');
   const [currentCharIndex, setCurrentCharIndex] = useState(1);
@@ -46,10 +45,10 @@ function MazeGeneratorAndSolver(){
           <h1 className='project-title blinking-cursor '>The Maze <span className='green-text'>{currentText}</span></h1>
           <div className='project-tags-and-link-container'>
             <div className='project-tags'>
-              <span className='project-tag'>Algorithms</span>
-              <span className='project-tag'>Data Structures</span>
-              <span className='project-tag'>Java</span>
-              <span className='project-tag'>Problem Solving</span>
+              <span className={`project-tag ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>Algorithms</span>
+              <span className={`project-tag ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>Data Structures</span>
+              <span className={`project-tag ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>Java</span>
+              <span className={`project-tag ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>Problem Solving</span>
             </div>
           </div>
           <span className='project-span'>

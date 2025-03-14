@@ -1,11 +1,10 @@
 import React from 'react';
 import './Project.css';
 import ServerImg from '../assets/images/Server.png';
-// import GitProjectIcon from '../assets/GitProject.svg';
 
 
 // TODO: make code lines in the media visible (in the Server.png file)
-function HTTPServer(){
+function HTTPServer({isDarkMode}) {
   return (
     <section id="HTTPServer" className="project">
       <div className="project-container right-to-left">
@@ -16,10 +15,10 @@ function HTTPServer(){
           <h1 className='project-title'>The Server_</h1>
           <div className='project-tags-and-link-container'>
             <div className='project-tags'>
-              <span className='project-tag'>Computer Networks</span>
-              <span className='project-tag'>Java</span>
-              <span className='project-tag'>Multithreading</span>
-              <span className='project-tag'>Concurrency</span>
+              <span className={`project-tag ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>Computer Networks</span>
+              <span className={`project-tag ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>Java</span>
+              <span className={`project-tag ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>Multithreading</span>
+              <span className={`project-tag ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>Concurrency</span>
             </div>
           </div>
           <span className='project-span'>

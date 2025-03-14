@@ -1,9 +1,8 @@
 import React from 'react';
 import './Project.css';
 import SynthesizerImage from '../assets/images/Synthesizer.png';
-// import GitProjectIcon from '../assets/GitProject.svg';
 
-function SynthesizerApp(){
+function SynthesizerApp({isDarkMode}) {
 
   return (
     <section id="SynthesizerApp" className="project ">
@@ -15,10 +14,10 @@ function SynthesizerApp(){
             <h1 className='project-title'>The Synthesizer_</h1>
             <div className='project-tags-and-link-container'>
               <div className='project-tags'>
-              <span className='project-tag'>DSP</span>
-              <span className='project-tag'>Multithreading</span>
-              <span className='project-tag'>Java</span>
-              <span className='project-tag'>GUI</span>
+              <span className={`project-tag ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>DSP</span>
+              <span className={`project-tag ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>Multithreading</span>
+              <span className={`project-tag ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>Java</span>
+              <span className={`project-tag ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>GUI</span>
               </div>
           </div>
           <span className='project-span'>

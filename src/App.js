@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Header from './layouts/Header/Header';
 import Home from './pages/Home';
@@ -13,26 +13,28 @@ import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
 
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
   return (
-      <div className="App">
-        <Header/>
-        <main className="main-content">
-          <Home />
+    <div className={`App ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
+      <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+      <main className="main-content">
 
-          <SynthesizerApp />
-          <MazeGeneratorAndSolver />
-          <Wordle />
-          <HTTPServer />
+        <Home isDarkMode={isDarkMode} />
 
-          {/* <About /> */}
-          
-          <Skills />
+        <SynthesizerApp isDarkMode={isDarkMode} />
+        <MazeGeneratorAndSolver isDarkMode={isDarkMode} />
+        <Wordle isDarkMode={isDarkMode} />
+        <HTTPServer isDarkMode={isDarkMode} />
+        
+        <Skills isDarkMode={isDarkMode} />
 
-          <Contact />
-        </main>
-        <SpeedInsights />
-        <Analytics />
-      </div>
+        <Contact isDarkMode={isDarkMode} />
+
+      </main>
+      <SpeedInsights />
+      <Analytics />
+    </div>
   );
 }
 

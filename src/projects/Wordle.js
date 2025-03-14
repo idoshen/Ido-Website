@@ -1,9 +1,8 @@
 import React from 'react';
 import './Project.css';
 import WordelImg from '../assets/images/Wordle.gif';
-// import GitProjectIcon from '../assets/GitProject.svg';
 
-function Wordle(){
+function Wordle({isDarkMode}) {
   return (
     <section id="Wordle" className="project">
       <div className="project-container left-to-right">
@@ -14,10 +13,10 @@ function Wordle(){
           <h1 className='project-title'>The Wordle Solver_</h1>
           <div className='project-tags-and-link-container'>
             <div className='project-tags'>
-              <span className='project-tag'>Information Theory</span>
-              <span className='project-tag'>Full Stack</span>
-              <span className='project-tag'>React</span>
-              <span className='project-tag'>Python</span>
+              <span className={`project-tag ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>Information Theory</span>
+              <span className={`project-tag ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>Full Stack</span>
+              <span className={`project-tag ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>React</span>
+              <span className={`project-tag ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>Python</span>
               </div>
           </div>
           <span className='project-span'>

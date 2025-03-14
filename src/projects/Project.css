@@ -1,5 +1,6 @@
 .project-container {
     display: flex;
+    margin: 20px 0;
 }
 
 .left-to-right {
@@ -44,12 +45,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #6f6f6f;
-    border: 1px solid #bfbfbf;
     padding: 10px;
     border-radius: 4px;
     font-size: 18px;
     font-weight: 400;
+}
+
+.project-tag.light-mode {
+    color: #22242a;
+    border: 2px solid #bfbfbf;
+}
+
+.project-tag.dark-mode {
+    color: #5CDB95;
+    border: 2px solid #5CDB95;
 }
 
 .project-span {
@@ -63,7 +72,8 @@
     align-items: center;
     width: 50%;
     opacity: 1;
-    background-color: #e4e4e6;
+    background-color: #e4e4e667;
+    border-radius: 20px;
 }
 
 .project-media-container-left-to-right, .project-media-container-right-to-left {
@@ -86,10 +96,12 @@
 
 .github-link-button {
     background-color: #5CDB95;
+    color: #22242a;
     border-radius: 5px;
     cursor: pointer;
     padding: 10px;
 }
+
 
 .github-link-button:hover, .github-link-button:active{
     background-color: hsl(147, 64%, 75%);

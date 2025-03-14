@@ -19,8 +19,61 @@ header {
   line-height: 30.72px;
 }
 
+.center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mode-button .switch {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+  width: 40px;
+  height: 20px;
+}
+
+.mode-button .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.mode-button .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; 
+  left: 0;
+  right: 0; 
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.mode-button .slider:before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  left: 5px;
+  bottom: 5px;
+  background-color: #F3F3F3;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.mode-button input:checked + .slider {
+  background-color: #5CDB95;
+}
+
+.mode-button input:checked + .slider:before {
+  background-color: #ccc;
+  transform: translateX(20px);
+}
+
 .header-job-container {
-  justify-self: center;
   color: #5a6072;
   font-weight: 500;
   font-size: 18px;
