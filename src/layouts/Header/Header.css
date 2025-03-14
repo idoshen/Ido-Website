@@ -118,6 +118,10 @@ header {
   .header-job-container {
     display: none;
   }
+
+  .mode-button {
+    display: none;
+  }
 }
 
 @media (max-width: 650px) {
