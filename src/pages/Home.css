@@ -80,7 +80,7 @@
 
 @media (max-width:1025px) {
   .home {
-    margin-bottom: 20px;
+    margin: 20px;
   }
   .home-p-and-buttons{ 
     width: 75%;

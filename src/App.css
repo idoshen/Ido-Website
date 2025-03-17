@@ -14,7 +14,7 @@ section {
 
 /* TODO: make sure consistent text and background colors */
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Sometype Mono', sans-serif;
   margin: 0;
 }
 
@@ -45,7 +45,7 @@ a {
 }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 h1 {
@@ -70,12 +70,12 @@ h1 {
   }
   
   p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
   }
   
   h1 {
-    font-size: 30px
+    font-size: 24px
   }
   
   h2 {

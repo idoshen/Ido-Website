@@ -16,10 +16,10 @@ function Home({isDarkMode}) {
           </p>
           <div className="home-buttons">
             <a href="./Ido Shenbach CV.pdf" className={`home-cv-button ${isDarkMode ? 'dark-mode' : 'light-mode'}`} download="Ido_Shenbach_CV.pdf">
-              Download CV
+              <strong>Download CV</strong>
             </a>
             <a className={`home-contact-button ${isDarkMode ? 'dark-mode' : 'light-mode'}`} href='#contact'>
-              Contact
+            <strong>Contact</strong>
             </a>
           </div>
         </div>

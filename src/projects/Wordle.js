@@ -23,7 +23,7 @@ function Wordle({isDarkMode}) {
             <p className='project-bullet'><strong >Dynamic Word Filtering:</strong> Continuously updates possibilities based on game feedback.</p>
             <p className='project-bullet'><strong>Efficient Guessing Process:</strong> Refines solutions in real-time, minimizing the number of guesses.</p>
             <a className='github-link-button' href='https://www.github.com/idoshen/Wordle-Solver' target="_blank" rel="noopener noreferrer">
-              GitHub
+              <strong>GitHub</strong>
             </a>
         </div>
       </div>

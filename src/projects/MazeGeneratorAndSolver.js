@@ -55,7 +55,7 @@ function MazeGeneratorAndSolver({isDarkMode}) {
             <p className='project-bullet'><strong>Efficient Maze Solving:</strong> Features an optimized solver that uses algorithms like DFS or BFS to find the shortest path through the maze.</p>
             <p className='project-bullet'><strong>Interactive Visualization:</strong> Provides a real-time visual representation of the maze creation and solving process, allowing users to explore and modify the maze.</p>
             <a className='github-link-button' href='https://www.github.com/idoshen/Maze-Generator-And-Solver' target="_blank" rel="noopener noreferrer">
-            GitHub
+              <strong>GitHub</strong>
             </a>
         </div>
       </div>

@@ -24,7 +24,7 @@ function SynthesizerApp({isDarkMode}) {
             <p className='project-bullet'><strong>Comprehensive Audio Effects:</strong> Includes ADSR, Saturation, Delay, Tremolo, Vibrato, and more for detailed sound manipulation.</p>
             <p className='project-bullet'><strong>Interactive DSP Control:</strong> Allows users to control frequency, modulation, and effects through intuitive input and real-time adjustments.</p>
             <a className='github-link-button' href='https://www.github.com/idoshen/Synthesizer-App' target="_blank" rel="noopener noreferrer">
-            GitHub
+              <strong>GitHub</strong>
             </a>
         </div>
       </div>  

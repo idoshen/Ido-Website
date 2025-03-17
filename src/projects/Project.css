@@ -115,7 +115,7 @@
 @media (max-width: 1025px) {
 
     .project {
-        margin-bottom: 20px;
+        margin: 20px;
     }
 
     .project-container {
