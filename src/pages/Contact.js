@@ -1,7 +1,7 @@
 import React from 'react';
 import './Contact.css';
 import MailIcon from '../assets/icons/Mail.svg';
-import LinkedInIcon from '../assets/icons/LinkedIn_Dark.svg';
+import LinkedInIcon from '../assets/icons/LinkedIn_Light.svg';
 import GithubIcon from '../assets/icons/Github_Dark.svg';
 import PhoneIcon from '../assets/icons/Phone.svg';
 
