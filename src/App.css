@@ -10,6 +10,15 @@ section {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+
+  /* Disable text selection */
+  user-select: none; /* Prevents text selection */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+
+  /* Disable all selection */
+  -webkit-touch-callout: none; /* iOS Safari */
 }
 
 /* TODO: make sure consistent text and background colors */
