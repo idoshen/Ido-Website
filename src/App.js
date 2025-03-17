@@ -31,13 +31,6 @@ function App() {
 
   const isDarkMode = useDarkMode();
 
-  useEffect(() => {
-    const ogImageMeta = document.querySelector('meta[property="og:image"]');
-    if (ogImageMeta) {
-      ogImageMeta.setAttribute("content", isDarkMode ? "/og-dark.png" : "/og-light.png");
-    }
-  }, [isDarkMode]);
-
   return (
     <div className={`App ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
       <Header isDarkMode={isDarkMode} />
