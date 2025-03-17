@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* padding: 50px 200px 50px 200px; */
+    margin: 60px 60px 100px 60px;
 }
 
 .contact-container{
@@ -74,7 +74,7 @@
 /* Mobile Styles */
 @media (max-width: 1025px) {
     .contact {
-        padding: 20px 0;
+        margin: 20px;
     }
 
     .contact-container{

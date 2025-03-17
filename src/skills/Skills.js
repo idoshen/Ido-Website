@@ -7,12 +7,14 @@ import Web from './Web';
 
 function Skills() {
     return (
-        <section id='skills' className="skills">
-            <ProgrammingLang />
-            <Web />
-            <PlatformAndFrame />
-            <MachineLearning />
-        </section>
+        <div className="dark-background">
+            <section id='skills' className="skills">
+                <ProgrammingLang />
+                <Web />
+                <PlatformAndFrame />
+                <MachineLearning />
+            </section>
+        </div>
     );
 }
 

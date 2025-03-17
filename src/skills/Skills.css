@@ -4,7 +4,9 @@
     margin: 100px 80px 100px 80px;
 
     row-gap: 100px;
+    
 }
+
 
 .skills > div {
     width: 50%;
@@ -13,7 +15,7 @@
 @media (max-width: 1025px) {
     .skills {
         display: flex;
-        margin: 100px 0px 100px 0px;
+        margin: 50px 0px 50px 0px;
 
         row-gap: 85px;
     }

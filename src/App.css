@@ -43,6 +43,11 @@ body {
   color: hsl(0, 0%, 85%);
 }
 
+.dark-background {
+  background-color: #22242a;
+  color: hsl(0, 0%, 85%);
+}
+
 .main-content {
   display: grid;
   grid-template-rows: repeat(11, auto);
