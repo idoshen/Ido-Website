@@ -5,7 +5,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 
 .icons-container{
@@ -20,14 +19,8 @@
     height: 50px;
 }
 
-.icons-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .skill-title {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
   
 /* Mobile Styles */

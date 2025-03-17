@@ -1,7 +1,9 @@
 .skills {
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
+    margin: 100px 80px 100px 80px;
+
+    row-gap: 100px;
 }
 
 .skills > div {
@@ -10,7 +12,10 @@
 
 @media (max-width: 1025px) {
     .skills {
-        display: block;
+        display: flex;
+        margin: 100px 0px 100px 0px;
+
+        row-gap: 85px;
     }
 
     .skills > div {
