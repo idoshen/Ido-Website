@@ -1,7 +1,7 @@
 import React from 'react';
 import './Contact.css';
 import MailIcon from '../assets/icons/Mail.svg';
-// import LinkedInIcon from '../assets/icons/LinkedIn_Dark.svg';
+import LinkedInIcon from '../assets/icons/LinkedIn_Dark.svg';
 import GithubIcon from '../assets/icons/Github_Dark.svg';
 import PhoneIcon from '../assets/icons/Phone.svg';
 
@@ -25,7 +25,7 @@ function Contact() {
             <img className="button-icon" src={PhoneIcon} alt="Phone" />
           </a>
           <a href="https://www.linkedin.com/in/idoshen/" className='contact-button' target="_blank" rel="noopener noreferrer">
-            {/* <img className="button-icon" src={LinkedInIcon} alt="LinkedIn" /> */}
+            <img className="button-icon" src={LinkedInIcon} alt="LinkedIn" />
           </a>
           <a href="https://www.github.com/idoshen" className='contact-button' target="_blank" rel="noopener noreferrer">
             <img className="button-icon" src={GithubIcon} alt="Github" />
