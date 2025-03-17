@@ -19,16 +19,12 @@ function Wordle({isDarkMode}) {
               <span className={`project-tag ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>Python</span>
               </div>
           </div>
-          <span className='project-span'>
             <p className='project-bullet'><strong >Entropy Calculation:</strong> Assesses word information gain for optimized guesses.</p>
             <p className='project-bullet'><strong >Dynamic Word Filtering:</strong> Continuously updates possibilities based on game feedback.</p>
             <p className='project-bullet'><strong>Efficient Guessing Process:</strong> Refines solutions in real-time, minimizing the number of guesses.</p>
-          </span>
-          <div>
             <a className='github-link-button' href='https://www.github.com/idoshen/Wordle-Solver' target="_blank" rel="noopener noreferrer">
               GitHub
             </a>
-          </div>
         </div>
       </div>
     </section>

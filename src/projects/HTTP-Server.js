@@ -21,16 +21,12 @@ function HTTPServer({isDarkMode}) {
               <span className={`project-tag ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>Concurrency</span>
             </div>
           </div>
-          <span className='project-span'>
             <p className='project-bullet'><strong>Custom HTTP Server:</strong> A fully functional web server that processes client requests and serves files from a customizable root directory.</p>
             <p className='project-bullet'><strong>Real-Time Data Logging:</strong> Captures session data and displays it in dynamic HTML tables for tracking request parameters.</p>
             <p className='project-bullet'><strong>Multithreaded Request Handling:</strong> Efficiently manages multiple client connections simultaneously using a thread pool, ensuring high performance under load.</p>
-          </span>
-          <div>
             <a className='github-link-button' href='https://www.github.com/idoshen/HTTP-Server' target="_blank" rel="noopener noreferrer">
             GitHub
             </a>
-          </div>
         </div>
       </div>
     </section>

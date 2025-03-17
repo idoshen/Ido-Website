@@ -51,16 +51,12 @@ function MazeGeneratorAndSolver({isDarkMode}) {
               <span className={`project-tag ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>Problem Solving</span>
             </div>
           </div>
-          <span className='project-span'>
             <p className='project-bullet'><strong>Dynamic Maze Generation:</strong> Implements an algorithm to randomly generate solvable mazes of varying difficulty levels.</p>
             <p className='project-bullet'><strong>Efficient Maze Solving:</strong> Features an optimized solver that uses algorithms like DFS or BFS to find the shortest path through the maze.</p>
             <p className='project-bullet'><strong>Interactive Visualization:</strong> Provides a real-time visual representation of the maze creation and solving process, allowing users to explore and modify the maze.</p>
-          </span>
-          <div>
             <a className='github-link-button' href='https://www.github.com/idoshen/Maze-Generator-And-Solver' target="_blank" rel="noopener noreferrer">
             GitHub
             </a>
-          </div>
         </div>
       </div>
     </section>

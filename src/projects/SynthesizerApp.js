@@ -20,16 +20,12 @@ function SynthesizerApp({isDarkMode}) {
               <span className={`project-tag ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>GUI</span>
               </div>
           </div>
-          <span className='project-span'>
             <p className='project-bullet'><strong>Real-Time DSP Sound Synthesis:</strong> Generates and processes audio in real-time using advanced oscillators and waveforms.</p>
             <p className='project-bullet'><strong>Comprehensive Audio Effects:</strong> Includes ADSR, Saturation, Delay, Tremolo, Vibrato, and more for detailed sound manipulation.</p>
             <p className='project-bullet'><strong>Interactive DSP Control:</strong> Allows users to control frequency, modulation, and effects through intuitive input and real-time adjustments.</p>
-          </span>
-          <div>
             <a className='github-link-button' href='https://www.github.com/idoshen/Synthesizer-App' target="_blank" rel="noopener noreferrer">
             GitHub
             </a>
-          </div>
         </div>
       </div>  
     </section>
