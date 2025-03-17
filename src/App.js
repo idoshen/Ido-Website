@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 import Header from './layouts/Header/Header';
 import Home from './pages/Home';
@@ -11,13 +11,30 @@ import Contact from './pages/Contact';
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/react"
 
+const useDarkMode = () => {
+  const [isDarkMode, setIsDarkMode] = useState(
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  );
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    const handleChange = () => setIsDarkMode(mediaQuery.matches);
+
+    mediaQuery.addEventListener("change", handleChange);
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
+
+  return isDarkMode;
+};
+
 function App() {
 
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const isDarkMode = useDarkMode();
+  console.log(isDarkMode);
 
   return (
     <div className={`App ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
-      <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+      <Header isDarkMode={isDarkMode} />
       <main className="main-content">
 
         <Home isDarkMode={isDarkMode} />

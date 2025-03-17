@@ -31,7 +31,7 @@ body {
 
 .App.dark-mode {
   background-color: #22242a;
-  color: #F3F3F3;
+  color: hsl(0, 0%, 85%);
 }
 
 .main-content {
@@ -61,7 +61,7 @@ h1 {
 /* Tablet Styles */
 @media (max-width: 1025px) {
   section {
-    scroll-margin-top: 62px;
+    scroll-margin-top: 78px;
   }
 
   .animate {
