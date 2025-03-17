@@ -1,8 +1,8 @@
 import React from 'react';
 import './Contact.css';
 import MailIcon from '../assets/icons/Mail.svg';
-import LinkedInIcon from '../assets/icons/LinkedIn_Light.svg';
-import GithubIcon from '../assets/icons/Github_Light.svg';
+import LinkedInIcon from '../assets/icons/LinkedIn_Dark.svg';
+import GithubIcon from '../assets/icons/Github_Dark.svg';
 import PhoneIcon from '../assets/icons/Phone.svg';
 
 
@@ -34,7 +34,7 @@ function Contact() {
       </div>
       <div className='contact-rights animate'>
           <p className='contact-rights-text'>&copy; 2025 Ido Shenbach. All rights reserved.</p>
-          {/* <p className='contact-rights-text'>DDD</p> */}
+          {/* <p className='contact-rights-text'>Mark?</p> */}
       </div>
     </section>
   );

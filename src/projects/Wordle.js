@@ -1,6 +1,7 @@
 import React from 'react';
 import './Project.css';
 import WordelImg from '../assets/images/Wordle.gif';
+import GitHubIcon from '../assets/icons/Github_Dark.svg';
 
 function Wordle({isDarkMode}) {
   return (
@@ -23,6 +24,7 @@ function Wordle({isDarkMode}) {
             <p className='project-bullet'><strong >Dynamic Word Filtering:</strong> Continuously updates possibilities based on game feedback.</p>
             <p className='project-bullet'><strong>Efficient Guessing Process:</strong> Refines solutions in real-time, minimizing the number of guesses.</p>
             <a className='github-link-button' href='https://www.github.com/idoshen/Wordle-Solver' target="_blank" rel="noopener noreferrer">
+              <img className='github-icon-img' src={GitHubIcon} alt='GitHub'></img>
               <strong>GitHub</strong>
             </a>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Project.css';
 import SynthesizerImage from '../assets/images/Synthesizer.png';
+import GitHubIcon from '../assets/icons/Github_Dark.svg';
 
 function SynthesizerApp({isDarkMode}) {
 
@@ -24,6 +25,7 @@ function SynthesizerApp({isDarkMode}) {
             <p className='project-bullet'><strong>Comprehensive Audio Effects:</strong> Includes ADSR, Saturation, Delay, Tremolo, Vibrato, and more for detailed sound manipulation.</p>
             <p className='project-bullet'><strong>Interactive DSP Control:</strong> Allows users to control frequency, modulation, and effects through intuitive input and real-time adjustments.</p>
             <a className='github-link-button' href='https://www.github.com/idoshen/Synthesizer-App' target="_blank" rel="noopener noreferrer">
+              <img className='github-icon-img' src={GitHubIcon} alt='GitHub'></img>
               <strong>GitHub</strong>
             </a>
         </div>

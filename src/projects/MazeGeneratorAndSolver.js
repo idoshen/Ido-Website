@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Project.css';
 import MazeGift from '../assets/images/Maze.gif';
+import GitHubIcon from '../assets/icons/Github_Dark.svg';
 
 function MazeGeneratorAndSolver({isDarkMode}) {
 
@@ -55,6 +56,7 @@ function MazeGeneratorAndSolver({isDarkMode}) {
             <p className='project-bullet'><strong>Efficient Maze Solving:</strong> Features an optimized solver that uses algorithms like DFS or BFS to find the shortest path through the maze.</p>
             <p className='project-bullet'><strong>Interactive Visualization:</strong> Provides a real-time visual representation of the maze creation and solving process, allowing users to explore and modify the maze.</p>
             <a className='github-link-button' href='https://www.github.com/idoshen/Maze-Generator-And-Solver' target="_blank" rel="noopener noreferrer">
+              <img className='github-icon-img' src={GitHubIcon} alt='GitHub'></img>
               <strong>GitHub</strong>
             </a>
         </div>

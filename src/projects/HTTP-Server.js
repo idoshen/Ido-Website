@@ -1,6 +1,7 @@
 import React from 'react';
 import './Project.css';
 import ServerImg from '../assets/images/Server.png';
+import GitHubIcon from '../assets/icons/Github_Dark.svg';
 
 
 // TODO: make code lines in the media visible (in the Server.png file)
@@ -25,6 +26,7 @@ function HTTPServer({isDarkMode}) {
             <p className='project-bullet'><strong>Real-Time Data Logging:</strong> Captures session data and displays it in dynamic HTML tables for tracking request parameters.</p>
             <p className='project-bullet'><strong>Multithreaded Request Handling:</strong> Efficiently manages multiple client connections simultaneously using a thread pool, ensuring high performance under load.</p>
             <a className='github-link-button' href='https://www.github.com/idoshen/HTTP-Server' target="_blank" rel="noopener noreferrer">
+              <img className='github-icon-img' src={GitHubIcon} alt='GitHub'></img>
               <strong>GitHub</strong>
             </a>
         </div>

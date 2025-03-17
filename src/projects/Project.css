@@ -96,8 +96,17 @@
     border-radius: 5px;
     cursor: pointer;
     padding: 10px;
-    width: max-content;
+    width: min-content;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.github-icon-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
 }
 
 
@@ -153,4 +162,11 @@
     .project-media {
         width: 200px;
     }
+
+    .github-icon-img {
+        width: 15px;
+        height: 15px;
+        margin-right: 2px;
+    }
+    
 }
