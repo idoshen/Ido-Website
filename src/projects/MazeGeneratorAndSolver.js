@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Project.css';
 import MazeGift from '../assets/images/Maze.gif';
-import GitHubIcon from '../assets/icons/Github_Dark.svg';
+import GitHubIcon from '../assets/icons/Github.svg';
 
 function MazeGeneratorAndSolver({isDarkMode}) {
 

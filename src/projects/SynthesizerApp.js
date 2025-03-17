@@ -1,7 +1,7 @@
 import React from 'react';
 import './Project.css';
 import SynthesizerImage from '../assets/images/Synthesizer.png';
-import GitHubIcon from '../assets/icons/Github_Dark.svg';
+import GitHubIcon from '../assets/icons/Github.svg';
 
 function SynthesizerApp({isDarkMode}) {
 

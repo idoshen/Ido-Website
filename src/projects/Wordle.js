@@ -1,7 +1,7 @@
 import React from 'react';
 import './Project.css';
 import WordelImg from '../assets/images/Wordle.gif';
-import GitHubIcon from '../assets/icons/Github_Dark.svg';
+import GitHubIcon from '../assets/icons/Github.svg';
 
 function Wordle({isDarkMode}) {
   return (

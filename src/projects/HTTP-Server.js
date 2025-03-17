@@ -1,7 +1,7 @@
 import React from 'react';
 import './Project.css';
 import ServerImg from '../assets/images/Server.png';
-import GitHubIcon from '../assets/icons/Github_Dark.svg';
+import GitHubIcon from '../assets/icons/Github.svg';
 
 
 // TODO: make code lines in the media visible (in the Server.png file)
