@@ -35,16 +35,16 @@ body {
 
 .App.light-mode {
   background-color: #F3F3F3;
-  color: #22242a;
+  color: #16171f;
 }
 
 .App.dark-mode {
-  background-color: #22242a;
+  background-color: #16171f;
   color: hsl(0, 0%, 85%);
 }
 
 .dark-background {
-  background-color: #22242a;
+  background-color: #16171f;
   color: hsl(0, 0%, 85%);
 }
 
