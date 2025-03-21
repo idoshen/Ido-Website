@@ -52,7 +52,7 @@
 }
 
 .project-tag.light-mode {
-    color: #22242a;
+    color: #16171f;
     border: 2px solid #bfbfbf;
 }
 
@@ -92,7 +92,7 @@
 
 .github-link-button {
     background-color: #5CDB95;
-    color: #22242a;
+    color: #16171f;
     border-radius: 5px;
     cursor: pointer;
     padding: 10px;

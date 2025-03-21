@@ -48,7 +48,7 @@
 .home-cv-button.dark-mode {
   background-color: #5CDB95;
   border: 2px solid #5CDB95;
-  color: #22242a;
+  color: #16171f;
   border-radius: 5px;
   cursor: pointer;
   padding: 10px;
@@ -75,7 +75,7 @@
 .home-contact-button:hover, .home-contact-button:active{
   background-color: #96e8bb;
   border: 2px solid #96e8bb; 
-  color: #22242a;
+  color: #16171f;
 }
 
 @media (max-width:1025px) {
