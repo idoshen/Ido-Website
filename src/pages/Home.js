@@ -26,9 +26,9 @@ function Home({isDarkMode}) {
         <div>
           
         </div>
-        {/* <div className="home-image-container">
-          <img src={IdoImg} alt="Ido Shenbach" className='home-image'></img>
-        </div> */}
+        <div className="home-image-container">
+          <img src='./ido.jpg' alt="Ido Shenbach" className='home-image'></img>
+        </div>
     </section>
   );
 }

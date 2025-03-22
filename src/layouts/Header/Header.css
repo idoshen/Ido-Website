@@ -32,14 +32,6 @@ header {
   line-height: 21.6px;
 }
 
-.header-job-container.light-mode {
-  color: #5a6072;
-}
-
-.header-job-container.dark-mode {
-  color: #F3F3F3;
-}
-
 .header-navigation-container {
   justify-self: end;
   font-weight: 400;

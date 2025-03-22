@@ -9,7 +9,7 @@ function SynthesizerApp({isDarkMode}) {
     <section id="projects" className="project ">
       <div className="project-container left-to-right">
         <div className='project-media-container-right-to-left'>
-          <img src={SynthesizerImage} alt='maze' className='project-media'></img>
+          <img src={SynthesizerImage} alt='maze' className='project-media square'></img>
         </div>
         <div className='project-text'>
             <h1 className='project-title'>The Synthesizer_</h1>

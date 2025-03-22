@@ -77,14 +77,17 @@
 }
 
 .project-media {
-    height: 90%;
     max-width: 500px;
     max-height: 500px;
-    border-radius: 8px;
     aspect-ratio: 1/1;
-    /* keep original aspect ratio */
     object-fit: contain;
 }
+
+.square {
+    height: 80%;
+    border-radius: 20px;
+}
+
 
 .project-bullet {
     margin-bottom: 20px;
@@ -116,7 +119,7 @@
 
 
 .green-text{
-    color: hsl(147, 64%, 45%);
+    color: #29bc6b;
 }
   
 

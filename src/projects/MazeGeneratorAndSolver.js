@@ -40,7 +40,7 @@ function MazeGeneratorAndSolver({isDarkMode}) {
     <section id="MazeGeneratorAndSolver" className="project">
       <div className="project-container right-to-left">
         <div className='project-media-container-left-to-right'>
-          <img src={MazeGift} alt='maze' className='project-media'></img>
+          <img src={MazeGift} alt='maze' className='project-media square'></img>
         </div>
         <div className='project-text'>
           <h1 className='project-title blinking-cursor '>The Maze <span className='green-text'>{currentText}</span></h1>
