@@ -92,13 +92,31 @@
   }
 
   .home-image-container { 
-    display: none;
-
+    width: 100%;
+    margin-bottom: 35px;
   }
+
+  .home-image {
+    width: 80%;
+  }
+  
 }
 
 @media (max-width: 650px) {
+  .home {
+    flex-direction: column-reverse;
+  }
+
   .home-p-and-buttons{ 
     width: 100%;
+  }
+
+  .home-image-container { 
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .home-image {
+    width: 70%;
   }
 }
