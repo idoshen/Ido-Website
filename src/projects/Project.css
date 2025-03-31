@@ -125,9 +125,8 @@
 
 /* Tablet Styles */
 @media (max-width: 1025px) {
-
     .project {
-        margin: 20px;
+        margin: 0px 20px;
     }
 
     .project-container {

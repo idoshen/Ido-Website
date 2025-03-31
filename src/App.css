@@ -1,7 +1,7 @@
 /* REMOVE: For debugging purposes */
 section {
   /* border: #e80000 2px solid; */
-  scroll-margin-top: 131px;
+  scroll-margin-top: 111px;
   margin: 0px 60px;
 }
 
@@ -75,7 +75,7 @@ h1 {
 /* Tablet Styles */
 @media (max-width: 1025px) {
   section {
-    scroll-margin-top: 88px;
+    scroll-margin-top: 111px;
   }
 
   .animate {
@@ -100,6 +100,7 @@ h1 {
 @media (max-width: 650px) {
   section {
     margin: 0px 30px;
+    scroll-margin-top: 88px;
   }
   .main-content {
     display: grid;
