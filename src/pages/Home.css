@@ -84,7 +84,6 @@
 }
 
 @media (max-width:1025px) {
-
   .home-p-and-buttons{ 
     width: 100%;
   }
@@ -104,6 +103,7 @@
   .home {
     flex-direction: column-reverse;
     padding: 20px 0px 50px 0px;
+    margin: 0px 20px;
   }
 
   .home-p-and-buttons{ 
