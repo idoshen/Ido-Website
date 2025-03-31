@@ -29,7 +29,8 @@ const useDarkMode = () => {
 
 function App() {
 
-  const isDarkMode = useDarkMode();
+  // const isDarkMode = useDarkMode();
+  const isDarkMode = true; // Fix the dark mode for now
 
   return (
     <div className={`App ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
