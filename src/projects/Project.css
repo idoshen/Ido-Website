@@ -68,7 +68,7 @@
     align-items: center;
     width: 50%;
     opacity: 1;
-    background-color: hsl(233, 17%, 15%);
+    background-color: #20212d;
     border: 2px solid #5CDB95;
     border-radius: 20px;
 }
@@ -115,7 +115,7 @@
 
 
 .github-link-button:hover, .github-link-button:active{
-    background-color: hsl(147, 64%, 75%);
+    background-color: #96e8bb;
   }
 
 

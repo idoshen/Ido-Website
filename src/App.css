@@ -72,6 +72,25 @@ h1 {
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
+/* Works on Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #20212d; /* Track background */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5CDB95; /* Scrollbar color */
+  border-radius: 10px;
+  border: 2px solid #20212d; /* Creates a little space around */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #96e8bb;
+}
+
 /* Tablet Styles */
 @media (max-width: 1025px) {
   section {
