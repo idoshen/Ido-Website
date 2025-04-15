@@ -68,7 +68,8 @@
     align-items: center;
     width: 50%;
     opacity: 1;
-    background-color: #e4e4e667;
+    background-color: hsl(233, 17%, 15%);
+    border: 2px solid #5CDB95;
     border-radius: 20px;
 }
 
