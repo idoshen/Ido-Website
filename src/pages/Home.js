@@ -15,7 +15,7 @@ function Home({isDarkMode}) {
             tackling complex algorithms, or contributing to impactful projects in tech.
           </p>
           <div className="home-buttons">
-            <a href="./Ido Shenbach CV.pdf" className={`home-cv-button ${isDarkMode ? 'dark-mode' : 'light-mode'}`} download="Ido_Shenbach_CV.pdf">
+            <a href="./Ido Shenbach CV.pdf" className={`home-cv-button ${isDarkMode ? 'dark-mode' : 'light-mode'}`} target="_blank" rel="noopener noreferrer" download="Ido_Shenbach_CV.pdf">
               <strong>Download CV</strong>
             </a>
             <a className={`home-contact-button ${isDarkMode ? 'dark-mode' : 'light-mode'}`} href='#contact'>
